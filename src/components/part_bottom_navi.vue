@@ -15,12 +15,12 @@
             <v-icon middle>mdi-track-light</v-icon>
         </v-btn>
 
-        <v-btn @click="$emit('switch','https://as.alltuu.com/album/1113662608/?from=appmessage')">
+        <v-btn to="/live">
             <span>直播</span>
             <v-icon middle>mdi-video-input-antenna</v-icon>
         </v-btn>
 
-        <v-btn @click="$emit('switch','https://www.wjx.cn/vj/eOhfc2H.aspx')">
+        <v-btn to="/survey">
             <span>问卷</span>
             <v-icon middle>mdi-message-text</v-icon>
         </v-btn>

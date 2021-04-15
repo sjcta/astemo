@@ -1,0 +1,30 @@
+﻿function fatMenuLevelLow1() {
+var fm='';
+fm +='<div class="FatMenuSet">';
+fm +='<div class="FMRTLink">';
+fm +='<div class="FMRTLinkInner">';
+fm +='<p class="FMTitleLinkStyle1"><a href="//www.hitachi.com.cn/index.html">日立在中国</a></p>';
+fm +='</div>';
+fm +='</div>';
+fm +='<div class="ClearFix">';
+fm +='<div class="FMGrid1">';
+fm +='<div class="FatMenuLink">';
+fm +='<p class="FMTitleLinkStyle1"><a href="//www.hitachi.com.cn/products_service/index.html">日立集团产品及服务</a></p>';
+fm +='</div>';
+fm +='</div>';
+fm +='<div class="FMGrid3">';
+fm +='<div class="ClearFix FMLeftLine">';
+fm +='<div class="FatMenuLink">';
+fm +='<p class="FMTitleLinkStyle1"><a href="//www.hitachi.com.cn/about/index.html">日立集团企业信息</a></p>';
+fm +='</div>';
+fm +='</div>';
+fm +='</div>';
+fm +='</div>';
+fm +='</div>';
+fm +='</div>';
+var el = document.createElement('div');
+el.setAttribute('className','FatMenu');
+el.setAttribute('class','FatMenu');
+el.innerHTML = fm;
+document.body.appendChild(el);
+}

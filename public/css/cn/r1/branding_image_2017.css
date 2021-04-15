@@ -1,0 +1,229 @@
+@charset "UTF-8";
+
+/* **************************************************
+
+Name: branding_image.css
+
+Description: Setting of branding image module
+
+Create: 2012.02.29
+Update: 2015.09.30
+
+Copyright 2012 Hitachi, Ltd.
+
+***************************************************** */
+
+
+
+/* Branding image
+=========================================================================================== */
+
+.JS #BrandingImgStyle {
+	height: 265px;
+}
+
+#BrandingImgStyle {
+	margin:0 auto;
+	padding:0;
+}
+
+#BrandingImgStyle noscript p,
+#BrandingImgStyle1 noscript p,
+#BrandingImgStyle2 noscript p {
+	position: relative;
+}
+
+
+/* Slide
+=========================================================================================== */
+
+.branding-image .slide {background-color: #363434;}
+
+.branding-image .slide .slide-list {
+	position:absolute;
+	z-index: 1;
+	display: none;
+	overflow:hidden;
+	top:0;
+	left:0;
+}
+
+
+
+/* Controller
+=========================================================================================== */
+
+.branding-image .controller {
+	position: absolute;
+	z-index: 4;
+	margin: 0;
+	right: 10px;
+	bottom: 10px;
+	list-style: none;
+}
+
+.branding-image .controller ul {
+	padding: 11px 10px 11px 3px;
+	/*background:url(/image/ml_portal/top/brandimage/icon/controller_bg.png);*/
+	overflow: hidden;
+}
+
+.JS .branding-image .controller a.focus {top: 0;}
+.PC .branding-image .controller a.focus {top: -20px;}
+
+
+/*--- Button ---*/
+
+.branding-image .controller li {
+	float:left;
+	height:24px;
+	margin-left:7px;
+	cursor:pointer;
+}
+
+.branding-image .controller a {
+	display:block;
+	overflow:hidden;
+	bottom:0;
+	right:0;
+}
+.branding-image .controller img {
+	border:none;
+	vertical-align:bottom;
+}
+
+
+/* for - 994px
+=========================================================================================== */
+
+@media screen and (max-width: 994px) {
+
+	.JS .branding-image .slide {
+		position: relative;
+		width: 100% !important;
+	}
+
+	.JS .branding-image .slide .slide-list {
+		width: 100% !important;
+		height: auto !important;
+	}
+
+	.JS .branding-image .slide .slide-list img {
+		width: 100% !important;
+		height: auto !important;
+	}
+
+}
+
+
+
+/* for - 767px
+=========================================================================================== */
+
+@media screen and (max-width: 767px) {
+
+	.JS .branding-image .controller {
+		width: 100%;
+		height: 0;
+		right: 0;
+		bottom: 40px;
+		text-align: center;
+	}
+
+	.JS .branding-image .controller ul {
+		display: inline-block;
+		height: 30px;
+		padding: 10px 7px 0 7px;
+	background:url(/image/ml_portal/top/brandimage/icon/controller_bg.png);
+	}
+
+	.JS .branding-image .controller li {
+		position: relative;
+		float: none;
+		display: inline-block;
+		width: 20px;
+		height: 20px;
+		margin: 0 4px;
+	}
+
+	.JS .branding-image .controller li a {
+		position: absolute;
+		display: block;
+		width: 15px;
+		height: 15px;
+		top: 2px !important;
+		left: 2px;
+		background-color: #fff;
+		text-indent: -9999px;
+		border-radius: 8px;
+	}
+	.JS .branding-image .controller li a.active {background-color: #e60027;}
+
+	.JS .branding-image .controller li:first-child a {
+		width: 4px;
+		height: 15px;
+		left: 4px;
+		background-color: transparent;
+		border-left: solid 4px #fff;
+		border-right: solid 4px #fff;
+		border-radius: 0;
+	}
+	.PC .branding-image .controller li:first-child a.focus {
+		border-left: solid 4px #e60027;
+		border-right: solid 4px #e60027;
+	}
+	.JS .branding-image .controller li:first-child a.pause {
+		width: 0;
+		height: 0;
+		left: 7px;
+		border-top: solid 8px transparent;
+		border-bottom: solid 8px transparent;
+		border-left: solid 8px #fff;
+		border-right: 0 none;
+	}
+	.PC .branding-image .controller li:first-child a.pause.focus {border-left: solid 8px #e60027;}
+
+}
+
+
+
+/* for - 579px
+=========================================================================================== */
+
+@media screen and (max-width: 579px) {
+
+	.JS .branding-image {margin-bottom: 50px !important;}
+
+	.JS .branding-image .controller {
+		height: 50px;
+		bottom: -50px;
+		background-color: #363434;
+	}
+
+	.JS .branding-image .controller ul {
+		display: block;
+		height: auto;
+		padding: 15px 15px 0;
+		background-image: none;
+	}
+
+	.JS .branding-image .slide .slide-list {cursor: pointer;}
+
+	.JS .branding-image .ResponsiveTextSet {
+		position: relative;
+		background-color: #363434;
+	}
+
+	.JS .branding-image .ResponsiveButton {
+		position: absolute;
+		width: 100%;
+	}
+
+	.JS .branding-image .slide .slide-list:hover .ButtonStyle1 a,
+	.JS .branding-image .slide .slide-list:active .ButtonStyle1 a {
+		padding-right: 24px;
+		background-color: #b1000e;
+		border-right: solid 1px transparent;
+	}
+
+}

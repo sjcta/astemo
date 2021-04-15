@@ -1,0 +1,105 @@
+@charset "utf-8";
+
+/* **************************************************
+
+Name: branding_image.css
+
+Description: Setting of branding image module
+
+Create: 2012.02.29
+Update: xxxx.xx.xx
+
+Copyright 2012 Hitachi, Ltd. 
+
+***************************************************** */
+
+
+
+/* Branding image
+=========================================================================================== */
+div#BrandingImgStyle1{
+position: relative;
+width:965px;
+z-index: 1;
+}
+
+.branding-image {
+	position:relative;
+}
+
+div#BrandingImgStyle1 a img{
+	vertical-align:top;
+}
+
+
+/* Slide
+=========================================================================================== */
+.branding-image .slide {
+
+}
+	.branding-image .slide a {
+		
+		display:none;
+		overflow:hidden;
+	}
+	.branding-image .slide img {
+		border:medium none;
+	}
+
+
+
+/* Controller
+=========================================================================================== */
+.branding-image .controller {
+	/*background:url("/image/ml_portal/mlp/controller_bg.png") no-repeat scroll 0 0 rgba(0,0,0,0);*/
+	bottom: 10px !important;
+    list-style: none outside none;
+    margin: 0;
+    /*padding: 11px 10px 11px 2px;*/
+    position: absolute;
+    right: 10px !important;
+    z-index: 1;
+}
+
+/*--- Position ---*/
+ 	.branding-image .controller.rt {  /* �E�� */
+		right:0;
+		top:0;
+	}
+	.branding-image .controller.lb {  /* ���� */
+		left:0;
+		bottom:0;
+	}
+	.branding-image .controller.rb {  /* �E�� */
+		right:0;
+		bottom:0;
+		
+	}*/
+
+/*--- Button ---*/
+	.branding-image .controller li {
+		float:left;
+		height:72px;
+		cursor:pointer;
+	}
+		.branding-image .controller.rt li,
+		.branding-image .controller.rb li {
+			margin-left:7px;
+			float:left;
+		}
+		.branding-image .controller.lb li {
+			margin-right:7px;
+		}
+	.branding-image .controller a {
+		display:block;
+		right:0;
+		overflow:hidden;
+		bottom:0;
+	}
+	.branding-image .controller img {
+		border: medium none;
+    	vertical-align: bottom;
+	}
+
+
+/* eof. */

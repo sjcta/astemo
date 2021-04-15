@@ -1,0 +1,289 @@
+#TopPage * {
+    box-sizing: border-box;
+}
+#TopBrandingArea {
+    width: 100%;
+    margin-bottom: 30px;
+}
+#TopBrandingArea .ImgSet {
+    position: relative;
+}
+#TopBrandingArea .ImgSet p.ImgOnlyStyle img {
+    width: 100%;
+}
+
+#TopBrandingArea .ImgSet .TextSet {
+    position: absolute;
+    width: 100%;
+    max-width: 1275px;
+    height: 100%;
+    margin-left: calc(-1275px / 2);
+    top: 0;
+    left: 50%;
+}
+
+#TopBrandingArea .TextSet p.TextStyle1 {
+    position:absolute;
+    font-size: 1.3em;
+    letter-spacing: 2px;
+    top: 50%;
+    margin: 0 20px;
+}
+#TopBrandingArea .TextSet p.TextStyle1.lightColor {
+    color: #FFF;
+    text-shadow: 0 0 20px rgba(0,0,0,1);
+    font-weight: 900;
+}
+
+
+
+#TopPage #productsBlock {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+#productsBlock li {
+    max-width: 400px;
+    height: 250px;
+    min-height: 250px;
+    margin-bottom: 25px;
+    overflow: visible;
+
+}
+#productsBlock li a {
+    display: block;
+    position: relative;
+    height: 100%;
+    padding: 25px;
+    margin: 15px;
+    text-decoration: none;
+    background-color: #fff;
+    box-shadow: 0 0 80px rgba(0,0,0,.2);
+    transition: all 600ms;
+}
+#productsBlock li a p {
+    font-size: 83%;
+    color: #333;
+}
+#productsBlock li a:hover {
+    background-color: #E60027;
+    box-shadow: 0 0px 10px rgba(146,0,0,.6);
+}
+
+#productsBlock li a:hover * {
+    color: #FFF;
+}
+#productsBlock li a h3 {
+    display: flex;
+    align-items: center;
+    min-height: 90px;
+    transition: all 300ms;
+}
+#productsBlock li a:hover h3 {
+    font-size: 120%;
+    text-shadow: 0 2px 20px rgba(0,0,0,.3);
+}
+#productsBlock li a:hover p {
+    text-shadow: 0 2px 20px rgba(0,0,0,.3);
+}
+
+
+
+#productsBlock li a:hover h3::before {
+    opacity: .5;
+    margin-right: 30px;
+    background-color: transparent;
+    transform: scale(1.4);
+}
+
+#productsBlock li a::after {
+    content: "了解更多";
+    position: absolute;
+    right: 25px;
+    bottom: 15px;
+    font-size: 83%;
+    color: #E60027;
+}
+#productsBlock li a:hover::after {
+    color: #ff6c84;
+}
+
+#productsBlock li.rd {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    min-height: auto;
+    padding: 25px 0 0;
+    
+}
+#productsBlock li.rd a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    border: 1px solid #518FB2;
+    box-shadow: none;
+}
+#productsBlock li.rd a section {
+    padding-right: 20%;
+}
+#productsBlock li.rd a h3 {
+    min-height: auto;
+}
+#productsBlock li.rd a h3::before {
+    display: none;
+}
+#productsBlock li.rd a::before {
+    content: "";
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+    min-width: 90px;
+    margin-right: 15px;
+    background-color: #518FB2;
+    background-image: url(/image/astemo/icon/icon_rd.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 70%;
+    transition: all 300ms;
+    opacity: 1;
+    
+}
+
+#productsBlock li.rd a::after {
+    top: calc(50% - 15px);
+}
+#productsBlock li.rd a:hover {
+    background-color: #FFF;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1);
+}
+#productsBlock li.rd a:hover * {
+    color: #222;
+    text-shadow: none;
+}
+
+#TopPage .Section.flexSet {
+    margin: 0 auto;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 1304px) {
+
+    #TopPage #productsBlock li {
+        width: 33%;
+    }
+    #TopPage #productsBlock li.rd {
+        width: 100%;
+        max-width: none;
+    }
+    .brandList {
+        width: 100%;
+    }
+    #TopBrandingArea .ImgSet .TextSet {
+        width: 100%;
+        margin-left: -50%;
+    }
+}
+
+
+@media screen and (max-width: 965px) {
+    #TopBrandingArea .TextSet p.TextStyle1 {
+        font-size: 1em;
+    }
+    #TopPage #productsBlock li {
+        width: 50%;
+        max-width: 480px;
+    }
+    #TopPage #productsBlock li.rd {
+        width: 100%;
+        max-width: none;
+    }
+    #TopPage .DateListStyle2 {
+        width: 100%;
+    }
+    .brandList span {
+        max-width: 18%;
+        flex-basis: auto;
+    }
+}
+
+@media screen and (max-width: 765px) {
+
+
+    #TopBrandingArea .ImgOnlyStyle,
+    #TopBrandingArea .ImgOnlyStyle img {
+        margin-bottom: 0;
+    }
+    #TopBrandingArea .ImgSet .TextSet {
+        position: relative;
+        display: flex;
+        align-items: center;
+        padding: 15px;
+        background-color: #B10005;
+    }
+    #TopBrandingArea .TextSet p.TextStyle1.lightColor {
+        position: relative;
+        top: auto;
+        text-shadow: none;
+    }
+    #TopPage #productsBlock {
+        display: block;
+    }
+    #TopPage #productsBlock li  {
+        width: auto;
+        max-width: 100%;
+        height: auto;
+        min-height: auto;
+        margin-bottom: 30px;
+    }
+    #productsBlock li.rd a {
+        flex-direction: column;
+    }
+    #productsBlock li.rd a h3::before {
+        display: block;
+        background-color: #518FB2;
+        background-image: url(/image/astemo/icon/icon_rd.svg);
+    }
+    #productsBlock li.rd a::before {
+        display: none;
+    }
+    #productsBlock li.rd a::after {
+        position: absolute;
+        top: auto;
+    }
+    #productsBlock li.rd a section {
+        padding-right: 0;
+    }
+
+    #TopPage #productsBlock li.rd {
+        margin: 15px;
+        padding-top: 0;
+        width: auto;
+        max-width: none;
+        min-height: none;
+    }
+    #TopPage #productsBlock li h3 br {
+        display: none;
+    }
+    #TopPage #productsBlock li p {
+        padding-bottom: 20px;
+    }
+    #productsBlock li a h3::before,
+    #productsBlock li.rd a::before {
+        width: 80px;
+        height: 80px;
+        min-width: 80px;
+    }
+    #productsBlock li.rd a:hover h3::before {
+        transform: scale(1);
+    }
+
+
+}

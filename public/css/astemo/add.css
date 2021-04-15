@@ -1,0 +1,1128 @@
+@import "animation.css";
+#Contents * {
+    box-sizing: border-box;
+}
+.GridSet {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+}
+.GridSet .Grid3 + .Grid1 {
+    margin-left: 25px;
+}
+.GridSet .Grid4 + .Grid1 {
+    display: none;
+}
+.show {
+    display: block;
+}
+.hide {
+    display: none;
+}
+.Grid4 h2 {
+    background: none;
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: bold;
+}
+.Grid4 h2 span {
+    background: none;
+    border-bottom: 1px solid #ddd;
+}
+.Grid4 h3 {
+    width: 100%;
+    margin-bottom: 15px;
+}
+.Grid4 h3 span {
+    display: block;
+    line-height: 2;
+    padding: 10px auto;
+    border-bottom: 1px solid #ddd;
+}
+
+#TopicPath {
+    padding-bottom: 15px;
+}
+.PageTitleStyle1,
+.Section {
+    width: 100%;
+    max-width: 1275px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+.PageTitleStyle1 {
+    margin: 0 auto 15px;
+}
+.PageTitleStyle1 h1 {
+    margin: 0 auto;
+}
+.wideSection {
+    margin-bottom: 30px;
+    max-width: 100%;
+    padding: 30px 0;
+}
+.grey {
+    background-color: #EDEDED;
+}
+.Section.lastSection {
+    padding: 0;
+}
+
+.w40p {
+    width: 40%;
+}
+
+/* flexSet */
+.flexSet {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+}
+.flexSet.Gap {
+    /*gap: 30px;*/
+    /* margin-bottom: 30px; */
+}
+.flexSet.Nowrap {
+    flex-wrap: nowrap;
+}
+.flexSet > * {
+    box-sizing: border-box;
+    
+}
+.flexSet.Col2 > * { width: 50%;}
+.flexSet.Col3 > * { width: 33.33%;}
+.flexSet.Col4 > * { width: 25%;}
+.flexSet.Col2.Gap > * { 
+    width: calc((100% - 30px)/2);
+    margin-left: 30px;
+}
+.flexSet.Col3.Gap > * { 
+    width: calc((100% - 60px)/3);
+    margin-left: 30px;
+}
+.flexSet.Col4.Gap > * { 
+    width: calc((100% - 90px)/4);
+    margin-left: 30px;
+}
+.flexSet.Col2.Gap > *:nth-child(2n+1),
+.flexSet.Col3.Gap > *:nth-child(3n+1),
+.flexSet.Col4.Gap > *:nth-child(4n+1) {
+    margin-left: 0px;
+}
+.flexSet.Reverse {
+    flex-direction: row-reverse;
+}
+
+.flexSet.Col2.Gap.Reverse > *:nth-child(2n+2),
+.flexSet.Col3.Gap.Reverse > *:nth-child(3n+2),
+.flexSet.Col4.Gap.Reverse > *:nth-child(4n+2) {
+    margin-left: 0px;
+}
+
+.flexSet.Column,
+.flexSet > .Column {
+    display: flex;
+    flex-direction: column;
+}
+.flexSet.MidAdjust,
+.flexSet > .MidAdjust {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 765px) 
+{
+    .flexSet.Col2.Gap > * {
+        flex-direction: row;
+        width: 100%;
+        margin: 0 0 20px;
+    }
+    .flexSet.Col2.Gap > *:last-child {
+        margin: 0;
+    }
+    .flexSet.Col3.Gap {
+        flex-direction: column;
+    }
+    .flexSet.Col3.Gap > * {
+        width: 100%;
+        margin: 0;
+        margin-bottom: 20px;
+    }
+    .flexSet.Col3.Gap > *:last-child {
+        margin: 0;
+    }
+    .flexSet.Col4.Gap > * {
+        width: 50%;
+        margin: 0;
+        margin-bottom: 20px;
+    }
+}
+
+
+div.hide {
+    display: none;
+}
+
+
+/* footer */
+.FMColumnMenuArea {
+    overflow: hidden;
+}
+
+#BrandingArea {
+    margin-bottom: 30px;
+    max-width: 100%;
+    height: 450px;
+}
+#BrandingArea .ImgSet {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+}
+#BrandingArea .ImgSet p.ImgOnlyStyle img {
+    position: relative;
+    height: 100%;
+    width: auto;
+    left: 50%;
+    margin-left: calc(-1920px / 2);
+}
+#BrandingArea .ImgSet .TextSet {
+    position: absolute;
+    width: 100%;
+    max-width: 1275px;
+    height: 100%;
+    margin-left: calc(-1275px / 2);
+    top: 0;
+    left: 50%;
+    padding: 50px 25px;
+}
+#BrandingArea .ImgSet .TextSet.light {
+    color: #FFF;
+}
+#BrandingArea .ImgSet .TextSet.shadow {
+    text-shadow: 0 2px 25px rgba(0,0,0,.8), 0 1px 5px rgba(0,0,0,1);
+}
+#BrandingArea .TextSet h2 {
+    font-size: 1.8em;
+    font-weight: 900;
+    text-align: left;
+}
+#BrandingArea .TextSet p.TextStyle1 {
+    position:absolute;
+    font-size: 1.3em;
+    letter-spacing: 2px;
+    top: 50%;
+    margin: 0 20px;
+}
+#BrandingArea .TextSet p.TextStyle1.lightColor {
+    color: #FFF;
+    text-shadow: 0 0 20px rgba(0,0,0,1);
+    font-weight: 900;
+}
+
+#productsBlock a h3::before {
+    content: "";
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+    margin-right: 30px;
+    background-color: rgba(230, 0, 39, 1);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 70%;
+    transition: all 300ms;
+    opacity: 1;
+}
+#productsBlock .ps a h3::before {
+    background-image: url(/image/astemo/icon/icon_ps.svg);
+}
+#productsBlock .chassis a h3::before {
+    background-image: url(/image/astemo/icon/icon_chassis.svg);
+}
+#productsBlock .adas a h3::before {
+    background-image: url(/image/astemo/icon/icon_adas.svg);
+}
+#productsBlock .motor a h3::before {
+    background-image: url(/image/astemo/icon/icon_motor.svg);
+}
+#productsBlock .after a h3::before {
+    background-image: url(/image/astemo/icon/icon_after.svg);
+}
+#productsBlock .rd a h3::before {
+    background-image: url(/image/astemo/icon/icon_rd.svg);
+}
+#productsBlock .brandList {
+    margin-top: 40px;
+    margin-bottom: 0;
+}
+#productsBlock .brandList a {
+    border: 1px solid #FFF;
+}
+#productsBlock .brandList a span {
+    margin: 10px;
+}
+#productsBlock .brandList a:hover {
+    border: 1px solid #eee;
+    background-color: #fefefe;
+}
+
+
+/* brandList */
+
+.brandList {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 80%;
+    margin: 0 auto 30px;
+}
+.brandList span {
+    display: inline-block;
+    height: 50px;
+    min-width: 150px;
+    margin: 10px;
+    text-align: center;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: auto 100%;
+    flex-basis: calc(20% - 20px);
+}
+.brandList span.hitachi, .brandList span.keihin, .brandList span.showa, .brandList span.nissin {
+    width: 200px;
+    flex-basis: calc(25% - 20px);
+}
+
+
+.brandList span.hitachi {  background-image: url(/image/astemo/brand_logo/hitachi.png); }
+.brandList span.keihin {  background-image: url(/image/astemo/brand_logo/keihin.png); }
+.brandList span.showa {  background-image: url(/image/astemo/brand_logo/showa.png); }
+.brandList span.nissin {  background-image: url(/image/astemo/brand_logo/nissin.png); }
+.brandList span.tokico {  background-image: url(/image/astemo/brand_logo/tokico.png); }
+.brandList span.paraut {  background-image: url(/image/astemo/brand_logo/paraut.png);}
+.brandList span.huco {  background-image: url(/image/astemo/brand_logo/huco.png); }
+.brandList span.cb {  background-image: url(/image/astemo/brand_logo/cb.png); }
+.brandList span.kitplus {  background-image: url(/image/astemo/brand_logo/kitplus.png); }
+
+
+/* img block */
+.imgBlock {
+    display: inline-block;
+    width: auto;
+    margin: 0 auto;
+}
+.imgBlock a {
+    display: block;
+    text-decoration: none;
+    transition: all 300ms;
+}
+.imgBlock a > span,
+.imgBlock > span {
+    display: block;
+    text-align: center;
+    background-color: #B10005;
+    padding: 3px 0 5px;
+    color: #FFF;
+    font-size: 90%;
+}
+.imgBlock p {
+    position: relative;
+}
+.imgBlock p > span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: #FFF;
+    font-weight: 900;
+    font-size: 150%;
+    text-shadow: 0 0 25px rgba(0, 0, 0, .5), 0 2px 5px rgba(0, 0, 0, .9);
+}
+.imgBlock p img {
+    width: 100%;
+}
+.imgBlock a:hover {
+    box-shadow: 0 5px 30px rgba(0, 0, 0, .3);
+    opacity: .8;
+}
+.imgBlock.border {
+    border: 1px solid #eee;
+}
+
+.imgSetStyle {
+    display: flex;
+    margin-bottom: 15px;
+    padding-right: 15px;
+}
+.imgSetStyle .Img {
+    margin-right: 15px;
+    width: 25%;
+    min-width: 25%;
+}
+.imgSetStyle .Img img {
+    width: 100%;
+}
+
+.newsLoader {
+    margin-bottom: 30px;
+}
+dl.DateListStyle2 {
+    width: 80%;
+    margin: 0 auto 15px;
+}
+dl.DateListStyle2 dd {
+    padding-left: 30px;
+}
+dl.DateListStyle2 dt {
+    min-width: 200px;
+}
+dl.DateListStyle2 dt,
+dl.DateListStyle2 dd {
+    margin-bottom: 5px;
+}
+.DateListStyle2 dd, .DateListStyle4 dd {
+    margin: 0 0 0 200px;
+}
+
+
+
+/*********************************** products ************************************/
+
+#productsBlock.pdListPage {
+    margin-top: -180px;
+}
+#productsBlock.pdListPage * { 
+    transition: all 600ms;
+}
+#productsBlock.pdListPage > div {
+    position: relative;
+    background: rgba(255, 255, 255, .9);
+    box-shadow: 0 10px 80px rgba(0,0,0,.2);
+    padding: 30px 30px 30px 360px;
+    margin-bottom: 30px;
+    margin-left: 90px;
+}
+#productsBlock.pdListPage > div > a {
+    display: inline-block;
+    position: absolute;
+    width: 400px;
+    left: -90px;
+    text-decoration: none;
+    background-color: hsla(353, 76%, 55%, 0.9);
+}
+#productsBlock.pdListPage > div > a > h3 {
+    display: flex;
+    align-items: center;
+    color: #FFF;
+    padding: 0 15px 0 0;
+    margin: 0;
+}
+
+#productsBlock.pdListPage > div > p.TextStyle1 {
+    padding: 30px 30px 30px 0;
+}
+#productsBlock.pdListPage > div:hover {
+    box-shadow: 0 0 1px rgba(0,0,0,.5);
+}
+#productsBlock.pdListPage > div:hover > a {
+    margin-top: -5px;
+    box-shadow: 0 5px 20px rgba(255, 2, 2, 0.5), 0 10px 80px rgba(0,0,0,.3);
+}
+#productsBlock.pdListPage > div > ul.LinkListStyle1.split {
+    display: flex;
+    flex-wrap: wrap;
+}
+#productsBlock.pdListPage > div > ul.LinkListStyle1.split li {
+    width: 50%;
+}
+
+#productsBlock.pdListPage .rd {
+    border: 1px solid rgb(81, 143, 178, .5);
+}
+#productsBlock.pdListPage .rd > a {
+    background-color: rgba(81, 143, 179, .9);
+}
+#productsBlock.pdListPage .rd:hover > a {
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
+}
+#productsBlock.pdListPage .rd a h3::before {
+    background-color: rgba(81, 143, 179, 1);
+}
+#productsBlock .brandList {
+    width: 100%;
+    justify-content: flex-start;
+}
+
+/************************************* product detail *******************************************/
+
+#productDetail {
+    display: block;
+    width: 100%;
+    background-color: #FFF;
+    padding: 50px 0;
+    background-size: 100%;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+#productDetail.ps { background-image: url(/image/astemo/branding/brandimage_products_cata1.jpg);}
+#productDetail.chassis { background-image: url(/image/astemo/branding/brandimage_products_cata2.jpg);}
+#productDetail.adas { background-image: url(/image/astemo/branding/brandimage_products_cata3.jpg);}
+#productDetail.motor { background-image: url(/image/astemo/branding/brandimage_products_cata4.jpg);}
+#productDetail.after { background-image: url(/image/astemo/branding/brandimage_products_cata5.jpg);}
+#productDetail.rd { background-image: url(/image/astemo/branding/brandimage_products_cata6.jpg);}
+
+
+
+#productDetail .titleArea {
+    display: block;
+    text-align: center;
+    background-color: rgba(255,255,255,.3);
+    padding: 50px;
+}
+#productDetail .titleArea > * {
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+#productDetail .titleArea h2 {
+    font-size: 180%;
+    background: #E60027;
+    color: #FFF;
+    line-height: 1.5;
+    padding: 0;
+}
+#productDetail .titleArea p {
+    line-height: 2;
+    margin: 20px auto 50px;
+}
+#productDetail .titleArea ul {
+    display: flex;
+    border: 1px solid #FFF;
+    border-radius: 50px;
+    margin-top: 50px;
+}
+#productDetail .titleArea ul li:first-child {
+    border-radius: 50px 0 0 50px;
+}
+#productDetail .titleArea ul li:last-child {
+    border-radius: 0 50px 50px 0;
+}
+#productDetail .titleArea ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 50%;
+    transition: 300ms;
+}
+#productDetail .titleArea ul li.active {
+    background-color: #FFF;
+}
+#productDetail .titleArea ul li:hover {
+    background-color: rgba(255,255,255,.3);
+}
+#productDetail .titleArea ul li.active:hover {
+    background-color: rgba(255,255,255,.7);
+}
+#productDetail .titleArea ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    line-height: 3;
+    text-align: center;
+    width: 100%;
+    text-decoration: none;
+    color: #FFF;
+    padding: 0 20px;
+}
+#productDetail .titleArea ul li.active a {
+    color: #E60027;
+}
+
+
+#productDetail .contentArea {
+    background-color:rgba(255, 255, 255, .8);
+    width: 100%;
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 50px 100px;
+    box-shadow: 0 -100px 80px rgba(0, 0, 0, 0.1);
+}
+#productDetail .contentArea .Section {
+    width: 100%;
+    margin-bottom: 30px;
+}
+#productDetail .contentArea .subTitle {
+    display: block;
+    text-align: center;
+    line-height: 3;
+    font-size: 150%;
+}
+#productDetail .contentArea h2 {
+    text-align: center;
+    padding: 5px 0;
+    margin: 0 0 20px;
+    font-size: 120%;
+    text-shadow: 0 1px 1px #FFF;
+    background-image: url(/image/astemo/products/h2_bg.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+}
+
+#productDetail.ps .contentArea h2 {background-color: #ffdea2; }
+#productDetail.chassis .contentArea h2 {background-color: #f1ffa2; }
+#productDetail.adas .contentArea h2 {background-color: #d4ffa2; }
+#productDetail.motor .contentArea h2 {background-color: #ffdea2; }
+#productDetail.after .contentArea h2 {background-color: #f7c7ef; }
+#productDetail.rd .contentArea h2 {background-color: #96e1ee; }
+
+
+#productDetail .contentArea h3 {
+    margin: 0 0 20px;
+}
+#productDetail .contentArea div.infoBox {
+    display: flex;
+    margin-bottom: 30px;
+}
+#productDetail .contentArea div.infoBox span {
+    font-size: 83%;
+    color: #999;
+}
+#productDetail .contentArea div.infoBox span + span {
+    display: block;
+    margin-left: 30px;
+}
+#productDetail .contentArea div.infoBox p {
+    width: 100%;
+    font-size: 83%;
+    color: #999;
+}
+.OptionWideRWD  #productDetail .contentArea .Section {
+    padding: 0;
+}
+#productDetail .contentArea .ProductsBox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-bottom: 30px;
+}
+
+#productDetail .contentArea .ProductsBox.row4 ul,
+#productDetail .contentArea .ProductsBox ul {
+    font-size: 83%;
+    width: calc(25% - 10px);
+    box-sizing: border-box;
+    transition: 100ms;
+    background: #FFF;
+    border-radius: 15px;
+    margin: 0 5px 10px;
+}
+
+#productDetail .contentArea .ProductsBox.row2 ul {
+    width: calc(50% - 10px);
+}
+#productDetail .contentArea .ProductsBox.row4 ul.w2row {
+    width: calc(50% - 10px);
+}
+#productDetail .contentArea .ProductsBox.row2 ul.w2row {
+    width: calc(50% - 10px);
+}
+#productDetail .contentArea .ProductsBox ul li {
+    margin: 5px 15px 5px 15px;
+    text-align: center;
+}
+
+#productDetail .contentArea .ProductsBox li img {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+}
+#productDetail .contentArea .ProductsBox ul:hover {
+    box-shadow: 0 0 50px rgba(0,0,0,.3);
+    z-index: 999;
+}
+
+
+
+/*********************************** about ************************************/
+
+#information {
+    display: block;
+}
+#information .headArticle {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    min-height: 220px;
+    padding: 30px;
+    margin-top: -150px;
+    margin-bottom: 50px;
+    background:rgba(255, 255, 255, .8);
+    box-shadow: 0 0 50px rgba(0,0,0,.3);
+}
+#information .headArticle p {
+    display: block;
+    line-height: 2;
+    width: 70%;
+    height: 100%;
+    margin: 30px auto;
+}
+.blockList {
+    text-align: center;
+    margin: 0;
+}
+.blockList li.sales {
+    background: #7A90A8;
+}
+.blockList li.after {
+    background: #809F7F;
+}
+.blockList li.check {
+    background: #FFF;
+    border: 1px solid #B60019;
+}
+.blockList li a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 210px;
+    color: #FFF;
+    text-align: center;
+    text-decoration: none;
+}
+.blockList li a i {
+    display: block;
+    width: 90px;
+    height: 90px;
+    margin: 0 auto 10px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.blockList li.sales a i {
+    background-image: url(/image/astemo/icon/icon_sales.png);
+}
+.blockList li.after a i {
+    background-image: url(/image/astemo/icon/icon_after.png);
+}
+.blockList li.check a {
+    color: #B60019;
+}
+.blockList li.check a i {
+    background-image: url(/image/astemo/icon/icon_check.png);
+}
+.blockList li {
+    transition: all 300ms;
+}
+.blockList li:hover {
+    box-shadow: 0 5px 30px rgba(0, 0, 0, .3);
+}
+#information .newsList {
+    margin-bottom: 30px;
+}
+
+
+#aboutAstemo .Section {
+    margin-bottom: 30px;
+}
+#aboutAstemo .slim {
+    width: 60%;
+    margin: 0 auto 30px;
+    padding: 20px;
+}
+#aboutAstemo .gray {
+    background-color:#eee;
+}
+#aboutAstemo h3 > span {
+    color:#B60019
+}
+#aboutAstemo .nameSet {
+    margin-bottom: 0px;
+}
+#aboutAstemo .nameSet .Col {
+    padding: 30px 15px;
+    background-color:#eee;
+    border-radius: 15px;
+}
+#aboutAstemo .nameSet .Col h3 {
+    font-size: 100%;
+    line-height: 1.5;
+}
+
+#aboutGroup .headArticle {
+    padding: 60px;
+    font-size: 120%;
+    margin-bottom: 30px;
+}
+#newsArea dl.DateListStyle2,
+#expoArea dl.DateListStyle2 {
+    width: 100%;
+    margin-bottom: 0px;
+}
+#newsArea dl.DateListStyle2 dd {
+    padding-left: 0;
+}
+#expoPage #BrandingArea {
+    background: #eee;
+    margin-bottom: 0;
+}
+#expoPage #BrandingArea h1 {
+    font-size: 1.8em;
+    font-weight: 900;
+}
+#expoPage #BrandingArea .ImgOnlyStyle {
+    width: 100%;
+    max-width: 1275px;
+    margin: 0 auto;
+}
+#expoPage #BrandingArea .ImgOnlyStyle img {
+    position: relative;
+    margin: auto;
+    left: auto;
+}
+#expoPage #BrandingArea .TextSet {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+}
+#expoPage #BrandingArea .TextSet p {
+    font-size: 250%;
+}
+#expoPage p.subTitle {
+    text-align: center;
+    font-size: 2.2em;
+    margin-bottom: 30px;
+}
+#expoPage section {
+    margin-bottom: 50px;
+}
+#expoPage .mainEvent {
+    margin-bottom: 50px;
+    padding: 50px 10%;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+}
+#expoPage .mainEvent h2 {
+    text-align: center;
+    line-height: 2;
+    margin: 30px auto;
+    font-size: 1.8em;
+}
+#expoPage .info {
+    margin: 30px auto 0;
+}
+#expoPage .info > div {
+    padding: 25px;
+    text-align: center;
+    border: 1px solid #eee;
+}
+#expoPage .info > div h3 {
+    font-size: 1.5em;
+    color:rgba(230, 0, 39, 1)
+}
+
+#expoPage .history .flexSet {
+    margin-bottom: 0;
+}
+#expoPage .history .flexSet .imgBlock {
+    margin-bottom: 30px;
+    margin-right: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen  and (max-width: 1304px) 
+{
+    .PageTitleStyle1 {
+        margin: 0 auto 15px;
+        padding: 0 15px;
+    }
+    .PageTitleStyle2 {
+        margin: 0 auto 15px;
+        padding: 0 15px;
+    }
+    .OptionWideRWD #Contents {
+        min-width: 290px;
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .OptionWideRWD #Contents .Section,
+    .OptionWideRWD #Contents .wideSection {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    #BrandingArea .ImgSet p.ImgOnlyStyle img {
+        max-width: none;
+    }
+    #BrandingArea .ImgSet .TextSet {
+        margin-left: auto;
+        left: 0;
+    }
+    
+    #productDetail {
+        background-size: auto;
+    }
+
+    #expoPage .mainEvent {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 965px) 
+{
+    #BrandingArea .ImgOnlyStyle {
+        height: 100%;
+    }
+    #BrandingArea .TextSet p.TextStyle1 {
+        font-size: 1em;
+    }
+    .brandList span {
+        max-width: 18%;
+        flex-basis: auto;
+    }
+
+    #productsBlock.pdListPage > div {
+        padding: 60px 30px 30px 30px;
+        margin-bottom: 90px;
+    }
+    #productsBlock.pdListPage > div > a {
+        top: -45px;
+    }
+    #productsBlock.pdListPage > div > p.TextStyle1 {
+        padding: 0;
+    }
+
+    .imgSetStyle {
+        display: flex;
+        margin-bottom: 15px;
+    }
+    .imgSetStyle .Img {
+        margin-right: 15px;
+        width: 30%;
+        min-width: 30%;
+    }
+    #expoPage #BrandingArea {
+        height: 100%;
+    }
+    #expoPage #BrandingArea .ImgOnlyStyle img {
+        width: 100%;
+    }
+    #expoPage dl.DateListStyle2 {
+        width: 100%;
+    }
+    #expoPage .info > div {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 765px) 
+{
+    .JS .GridSet {
+        display: block;
+    }
+    #Contents .Section > .Section {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .JS .GridSet .Grid3 .PageTitleStyle2 {
+        padding: 0 15px;
+    }
+    .JS .GridSet .Grid1 {
+        width: 100%;
+        margin: 0;
+    }
+    .JS h2, .JS .LV1LinkSet {
+        margin: 0;
+    }
+
+
+    dl.DateListStyle2 dd {
+        padding-left: 0;
+    }
+    dl.DateListStyle2 dt, dl.DateListStyle2 dd {
+        margin-bottom: auto;
+    }
+    .brandList span {
+        min-width: 120px;
+        height: 40px;
+        margin: 5px;
+        background-size: 100% auto;
+    }
+    .brandList span.hitachi, .brandList span.keihin, .brandList span.showa, .brandList span.nissin {
+        width: 25%;
+        flex-basis: calc(25% - 20px);
+    }
+
+    .brandList { 
+        width: 100%;
+        margin: 0;
+    }
+    .brandList span { 
+        width: 100px;
+        flex-basis: calc(50% - 20px);
+    }
+    #productsBlock.pdListPage > div {
+        margin-left: 0;
+        padding: 30px;
+    }
+    #productsBlock.pdListPage > div > a {
+        top: -55px;
+        left: -15px;
+        right: 0;
+        width: calc(100% + 30px);
+    }
+    #productsBlock.pdListPage > div > a h3::before {
+        width: 60px;
+        height: 60px;
+    }
+    #productsBlock.pdListPage {
+        margin-top: -30px;
+    }
+
+
+    #productDetail {
+        padding: 30px 0;
+    }
+    #productDetail .titleArea {
+        padding: 30px 0;
+    }
+    #productDetail .titleArea h2 {
+        font-size: 140%;
+        width: 100%;
+        padding: 10px 15px;
+    }
+    #productDetail .titleArea p {
+        width: 100%;
+        padding: 0 15px;
+        margin: 20px auto 40px;
+        font-size: 83%;
+    }
+    #productDetail .titleArea ul li a {
+        line-height: 1.5;
+        font-size: 90%;
+        padding: 10px 20px;
+    }
+
+    #productDetail .contentArea {
+        padding: 30px 15px;
+        margin: 30px auto;
+    }
+    #productDetail .contentArea h2 {
+        background-size: auto 100%;
+        background-position: right center;
+     }
+    #productDetail .contentArea .ProductsBox.row4 ul,
+    #productDetail .contentArea .ProductsBox.row2 ul {
+        width: calc(50% - 10px);
+    }
+    #productDetail .contentArea .ProductsBox.row4 ul.w2row
+    #productDetail .contentArea .ProductsBox ul.w2row {
+        width: 100%;
+    }
+    #productDetail .contentArea div.infoBox {
+        display: flex;
+        flex-direction: column;
+    }
+    #productDetail .contentArea div.infoBox span + span {
+        margin-left: 0;
+    }
+
+
+    d.headArticle {
+        width: 100%;
+        padding: 15px;
+        height: auto;
+        min-height: auto;
+    }
+    #information .headArticle {
+        min-height: auto;
+        padding: 30px;
+    }
+    #information .headArticle p {
+        display: inline-block;
+        width: 80%;
+        font-size: 83%;
+        margin: 20px;
+    }
+    
+    #information #BrandingArea {
+        height: auto;
+    }
+    #information #BrandingArea .ImgSet {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        height: auto;
+    }
+    #information #BrandingArea .ImgSet p.ImgOnlyStyle img {
+        position: relative;
+        width: 100%;
+        height: auto;
+        left: auto;
+        margin: auto;
+    }
+    
+    #information #BrandingArea .ImgSet .TextSet {
+
+        position: relative;
+        height: auto;
+        text-shadow: none;
+        color: #333;
+        padding: 15px;
+    }
+    #information #BrandingArea .ImgSet .TextSet p br {
+        display: none;
+    }
+    #information .headArticle {
+        margin-top: auto
+    }
+    .blockList li a {
+        flex-direction: row;
+        height: auto;
+        padding: 20px;
+    }
+    .blockList li a i {
+        width: 70px;
+        height: 70px;
+        margin: 0 15px 0 0;
+    }
+
+    #aboutAstemo .slim {
+        width: 100%;
+        margin: 0 auto 30px;
+        padding: 15px;
+    }
+    #expoPage .mainEvent {
+        width: 100%;
+    }
+    
+}

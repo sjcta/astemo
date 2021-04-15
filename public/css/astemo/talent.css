@@ -1,0 +1,262 @@
+/* [-] Talent
+=========================================================================================== */
+#Talent {
+	margin: 0 auto 30px;
+    overflow: hidden;
+}
+#Talent * {
+    box-sizing: border-box;
+}
+#Talent .Parts {
+	display: block;
+	position: relative;
+	width: 100%;
+	height: auto;
+	min-height: 600px;
+}
+#Talent .Part1 .bg {
+	display: block;
+	position: absolute;
+	z-index: 10;
+	width: 100%;
+	height: 100%;
+	background-color: #FFF;
+	background-image:url("/image/hap/talent/pic01.png");
+	background-position: bottom center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100% auto ;
+}
+#Talent .Parts .words {
+	position: relative;
+	z-index: 5;
+}
+#Talent .Parts .img {
+	position: absolute;
+	top: 0px;
+	right: 10px;
+	display: block;
+	width: 550px;
+	height: 500px;
+	background-size: auto 100%;
+	background-position: right top;
+	background-repeat: no-repeat;
+	opacity: 0;
+	z-index: 0;
+}
+#Talent .Part2 .img {
+	top: 50px;
+	width: 900px;
+	height: 450px;
+	background-repeat: no-repeat;
+	background-image:url("/image/hap/talent/pic02.png")
+}
+#Talent .Part3 .img { background-image:url("/image/hap/talent/pic03.png")}
+#Talent .Part4 .img { background-image:url("/image/hap/talent/pic04.png")}
+#Talent .Part5 .img { background-image:url("/image/hap/talent/pic05.png")}
+
+
+#Talent .Parts h2 {
+	padding:50px 0 0 50px;
+	background: none;
+	margin-bottom: 90px;
+}
+#Talent .Parts h2 span{
+	background: none;
+	padding: 0;
+	line-height: 1.2;
+    border: none;
+}
+#Talent .Parts h2 span strong {
+	font-size: 50px;
+	margin-top: 20px;
+	line-height: 1.5;
+}
+
+#Talent .Parts h3 {
+	padding:0 0 0 50px;
+	font-size: 110%;
+	line-height: 1.5;
+    border: none;
+}
+#Talent .Parts .TextStyle1 {
+	width: 48%;
+	padding:20px 0 0 50px;
+	font-size:16px;
+	line-height:2;
+}
+
+#Talent .slogan {
+	position: absolute;
+	top: 40px;
+	width: 100%;
+	height: 300px;
+	z-index: 11;
+}
+#Talent .slogan .FirstItem,
+#Talent .slogan .LastItem {
+	position: absolute;
+	top: 0px;
+	width: 300px;
+	height: 300px;
+	background: rgba(255,255,255,.85);
+	border: 8px solid #555;
+	border-radius: 100%;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box; /* Firefox */
+	-webkit-box-sizing:border-box; /* Safari */
+}
+#Talent .slogan .FirstItem {	left: 10%;}
+#Talent .slogan .LastItem {	right: 10%;}
+#Talent .slogan i {
+	display: block;
+	font-size: 900%;
+	font-style: normal;
+	color: #ccc;
+	line-height: 300px;
+	width: 100%;
+	text-align: center;
+}
+#Talent .slogan div.layout {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left:0;
+	top:0;
+
+}
+#Talent .slogan div p {
+	padding: 0 0 20px;
+}
+#Talent .slogan div * {
+	text-align: center;
+}
+#Talent .slogan div h2 {
+	padding: 70px 0 20px;
+	margin: 0;
+}
+#Talent .slogan div h2 span {
+	display: inline;
+	color: #b1000e;
+}
+#Talent .slogan div h2 strong {
+	color: #b1000e;
+}
+
+#Talent .Part6 {
+	display: block;
+	padding-bottom: 50px;
+}
+#Talent .Part6 .words {
+	overflow: hidden;
+	width: 100%;
+}
+#Talent .Part6 ul {
+	width: 120%;
+	padding: 0;
+}
+#Talent .Part6 ul li {
+	float: left;
+	width:22%;
+	margin-left: 5%;
+	margin-bottom: 50px;
+	text-align: center;
+	font-size: 83%;
+}
+#Talent .Part6 ul li img {
+	width: 100%;
+	border-radius: 100%;
+	margin-bottom: 10px;
+	border: 5px solid #c5c5c5;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box; /* Firefox */
+	-webkit-box-sizing:border-box; /* Safari */
+}
+#Talent .Part6 ul li a:hover {
+	cursor: pointer;
+}
+#Talent .Part6 ul li a:hover img {
+	border: 5px solid #b1000e;
+
+}
+#Talent .Part6 ul li article {
+	display: none;
+}
+
+
+.talentMask {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: auto;
+	height: auto;
+	background-color: #000;
+	opacity: .7;
+	z-index: 498;
+  overflow: hidden;
+}
+#Talent .popup .info {
+	display: none;
+	position: fixed;
+	width: 720px;
+	left: 50%;
+	margin-left: -360px;
+	top: 25%;
+	bottom: auto;
+	background-color: #FFF;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box; /* Firefox */
+	-webkit-box-sizing:border-box; /* Safari */
+	z-index: 499;
+	border-radius: 1%;
+	box-shadow: 0 0 20px #333;
+}
+
+#Talent .popup .info .avatar {
+	position: absolute;
+	top: -90px;
+	width: 100%;
+	text-align: center;
+	font-style: 900;
+	font-size: 120%;
+}
+#Talent .popup .info .avatar img {
+	width: 50%;
+	max-width: 180px;
+	border-radius: 100%;
+	margin-bottom: 10px;
+	border: 5px solid #FFF;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box; /* Firefox */
+	-webkit-box-sizing:border-box; /* Safari */
+}
+#Talent .popup .info .TextStyle2 {
+	line-height: 1.5;
+	padding: 150px 50px 50px;
+	font-size: 90%;
+}
+#Talent .popup .info button {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	line-height: 2;
+	border: 0;
+	background-color: #b1000e;
+	color: #FFF;
+}
+
+
+#Talent .ScrollArrow {
+	z-index: 300;
+	position: fixed;
+	left: 0;
+	bottom: 1%;
+	width: 100%;
+	height: 50px;
+	background: url("/image/hap/talent/scroll_arrow.png") center center no-repeat;
+	margin-bottom: 0;
+	text-align: center;
+}

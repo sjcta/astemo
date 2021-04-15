@@ -1,0 +1,255 @@
+.Expo .button {
+	position: absolute;
+	margin: -40px 0 0 450px;
+}
+.Expo h2 span, .Expo h2 {
+	border: 0;
+	line-height: 2;
+	font-size: 100%;
+	background: none;
+}
+.Expo h2 span {
+	padding: 10px 20px 0 20px;
+}
+.Expo .traffic {
+	background: #f0f0f0;
+	margin: 0 0 20px;
+}
+.Expo .traffic .Section {
+	border-top: 2px solid #FFF;
+	padding: 5px;
+	overflow: hidden;
+	height: 470px;
+}
+.Expo .traffic .Section p.ImgOnlyStyle {
+	float: left;
+}
+.Expo .traffic .Section dl {
+	float: left;
+	width: 310px;
+	margin: 0 0 0 10px;
+}
+.Expo .traffic .Section dl dt {
+	font-size: 83%;
+	font-weight: 900;
+	line-height: 2;
+	padding: 0 0 0 20px;
+	background: url(/image/hap/expo/point.gif) left center no-repeat;
+}
+.Expo .traffic .Section dl dd {
+	font-size: 83%;
+	line-height: 1.5;
+	padding: 0 0 10px 20px;
+}
+.Expo .traffic .Section dl dt span {
+	display: none;
+}
+
+.Expo .ColumnSet .Column2 {
+	width: 390px;
+}
+.Expo .ColumnSet .FirstItem {
+	float: left;
+}
+.Expo .ColumnSet .LastItem {
+	float: right;
+}
+
+
+ul.FixedTop {
+	position:fixed;
+	top:0px;
+	z-index:99;
+	margin:0 auto;
+}
+
+@media print{
+ul.FixedTop {
+	position: relative;
+	top: 0px !important;
+}
+}
+
+ul.HotSpot {
+	display:block;
+	overflow:hidden;
+	width:965px;
+	opacity:0.9;
+	-moz-box-shadow: 0 3px 10px #e2e2e2;
+	box-shadow: 0 3px 10px #e2e2e2;
+	/*margin:-40px 0 60px 0;*/
+	margin: 0 0 30px;
+
+}
+ul.HotSpot li {
+	display:block;
+	float:left;
+	/*width:239px;*/
+	width:480px;
+	height:70px;
+	border:1px solid #e0e0e0;
+	margin:0;
+	font-size:125%;
+	font-weight:800;
+	color:#299ad4;
+}
+ul.HotSpot li:first-child {
+	margin-left:0;
+}
+ul.HotSpot li:last-child {
+	width:481px;
+	margin-right:0;
+}
+ul.HotSpot li a {
+	display:flex;
+	align-items : center;
+	width:100%;
+	
+	height:70px;
+	text-decoration:none;
+	color:#000;
+	vertical-align:middle;
+	padding:0 0 0 60px;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-ms-box-sizing:border-box;
+	-o-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+}
+
+ul.HotSpot li a:hover,
+ul.HotSpot li.active a {
+	color:#FFF;
+}
+
+ul.HotSpot li.block1 {
+	background:url("/image/hap/expo/2016bj/icon.png") no-repeat 10px 10px #fff;
+}
+ul.HotSpot li.block1 a:hover,
+ul.HotSpot li.block1.active a {
+	background: #3ab4d2 url("/image/hap/expo/2016bj/icon.png") no-repeat 10px -39px;
+}
+ul.HotSpot li.block2 {
+	background:url("/image/hap/expo/2016bj/icon.png") no-repeat 10px -90px #fff;
+}
+ul.HotSpot li.block2 a:hover,
+ul.HotSpot li.block2.active a {
+	background: #3ab4d2 url("/image/hap/expo/2016bj/icon.png") no-repeat 10px -140px;
+}
+ul.HotSpot li.block3 {
+	background:url("/image/hap/expo/2016bj/icon.png")  no-repeat 10px -190px #fff;
+}
+ul.HotSpot li.block3 a:hover,
+ul.HotSpot li.block3.active a {
+	background: #3ab4d2 url("/image/hap/expo/2016bj/icon.png") no-repeat 10px -239px;
+}
+/*ul.HotSpot li.block4 {
+	background:url("/image/hap/expo/2016bj/icon.png") no-repeat 25px -288px #fff;
+}
+ul.HotSpot li.block4 a:hover,
+ul.HotSpot li.block4.active a {
+	background: #3ab4d2 url("/image/hap/expo/2016bj/icon.png") no-repeat 25px -340px;
+}
+*/
+ul.HotSpot li.block5 {
+	background:url("/image/hap/expo/2016bj/icon.png") no-repeat 13px -388px #fff;
+}
+ul.HotSpot li.block5 a:hover,
+ul.HotSpot li.block5.active a {
+	background: #3ab4d2 url("/image/hap/expo/2016bj/icon.png") no-repeat 13px -441px;
+}
+
+#bd p.TextStyle1 {
+	line-height:1.8;
+}
+
+#bd dl.AdditionalNotesStyle1 dt {
+	width:150px;
+	margin-right:10px;
+}
+
+#bd p.TextStyle1 a {
+	text-decoration:none;
+	font-size:105%;
+	color:#67b5cb;
+}
+
+#bd p.TextStyle1 a:hover {
+	background-color:#eee;
+}
+
+#bd p.TextStyle1 {
+	margin:15px 0 0 53px;
+}
+
+#bd p.TextStyle2 {
+	line-height:2;
+	font-size:90%;
+}
+
+#bd p.TextStyle1 a span {
+	color:#687692;
+}
+
+
+.pdf_download .BoxPatternA {
+	margin: 0;
+	padding: 15px 0;
+}
+
+
+ul.CSRCategoryMenu {
+	margin-left: -15px;
+}
+
+ul.CSRCategoryMenu li {
+	float: left;
+	box-sizing: border-box;
+	margin-bottom: 40px;
+	padding-left: 15px;
+}
+
+.CSRCategoryMenu a {
+	display: table;
+	margin-bottom: 10px;
+	width: 100%;
+	background: #363434;
+	color: #fff;
+	text-decoration: none;
+	outline-offset: -1px;
+}
+
+.CSRCategoryMenu a .Img {
+	display: table-row;
+}
+
+.CSRCategoryMenu a img {
+	max-width: 100%;
+	width: 100%;
+	height: auto;
+}
+
+.CSRCategoryMenu a .Text {
+	display: table-cell;
+	padding: 10px 50px 10px 10px;
+	background: #363434 url(/image/hap/top/circle.png) right 11px center no-repeat;
+	line-height: 1.1111111111;
+	vertical-align: middle;
+	line-height:150%;
+}
+
+.CSRCategoryMenu a:hover,
+.CSRCategoryMenu a:focus {
+	text-decoration: underline;
+}
+
+.CSRCategoryMenu a:hover img,
+.CSRCategoryMenu a:focus img {
+	opacity: .9;
+}
+
+@media print {
+	.CSRCategoryMenu a {
+		background: transparent;
+	}
+}

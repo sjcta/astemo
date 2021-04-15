@@ -1,0 +1,83 @@
+
+.GridSet {
+    width: 100%;
+}
+.GridSet .Grid4 {
+    width: 100%;
+}
+.PageTitleStyle1,
+.Section {
+    width: 100%;
+    max-width: 1275px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+.Section.lastSection {
+    padding: 0;
+}
+
+.flexSet {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 0 60px;
+}
+.flexSet.Gap {
+    /*gap: 30px;*/
+    margin-bottom: 30px;
+}
+.flexSet.Nowrap {
+    flex-wrap: nowrap;
+}
+.flexSet > * {
+    box-sizing: border-box;
+    
+}
+.flexSet.Col2 > * { width: 50%;}
+.flexSet.Col3 > * { width: 33.33%;}
+.flexSet.Col4 > * { width: 25%;}
+.flexSet.Col2.Gap > * { 
+    width: calc((100% - 30px)/2);
+    margin-left: 30px;
+}
+.flexSet.Col3.Gap > * { 
+    width: calc((100% - 60px)/3);
+    margin-left: 30px;
+}
+.flexSet.Col4.Gap > * { 
+    width: calc((100% - 90px)/4);
+    margin-left: 30px;
+}
+.flexSet.Col2.Gap > *:nth-child(2n+1),
+.flexSet.Col3.Gap > *:nth-child(3n+1),
+.flexSet.Col4.Gap > *:nth-child(4n+1) {
+    margin-left: 0px;
+}
+.flexSet.Reverse {
+    flex-direction: row-reverse;
+}
+
+.flexSet.Col2.Gap.Reverse > *:nth-child(2n+2),
+.flexSet.Col3.Gap.Reverse > *:nth-child(3n+2),
+.flexSet.Col4.Gap.Reverse > *:nth-child(4n+2) {
+    margin-left: 0px;
+}
+
+.flexSet.Column,
+.flexSet > .Column {
+    display: flex;
+    flex-direction: column;
+}
+.flexSet.MidAdjust,
+.flexSet > .MidAdjust {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+div.hide {
+    display: none;
+}

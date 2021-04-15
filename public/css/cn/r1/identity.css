@@ -1,0 +1,1111 @@
+@charset "utf-8";
+
+/* **************************************************
+
+Name: identity.css
+
+Description: CSS for Hitachi Group Identity Page
+- //www.hitachi.com.cn/about/identity/index.html
+
+Create: 2014.10.XX
+Update: XXXX.XX.XX
+
+Copyright 2014 Hitachi, Ltd.
+
+***************************************************** */
+
+
+
+/* [-] Base Setting
+=========================================================================================== */
+
+.Grid4 {position: relative;}
+
+
+
+/* [-] Page Title
+=========================================================================================== */
+
+.PageTitleStyle3 {
+	position: relative;
+	width: 965px;
+	height: 500px;
+	margin-bottom: 0;
+	overflow: hidden;
+}
+
+.PageTitleStyle3 .bg {
+	position: relative;
+}
+.PageTitleStyle3 .bg img {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+#IdentityTitleBg2 {top: 0; left: -20px;}
+#IdentityTitleBg3 {top: 0; left: -120px;}
+
+.PageTitleStyle3 h1 {
+	position: relative;
+}
+
+.PageTitleStyle3 h1 a {
+	display: block;
+	padding: 156px 0 0 84px;
+}
+
+.PageTitleStyle3 p {
+	position: relative;
+	padding: 15px 0 0 90px;
+}
+
+
+
+/* [-] Scroll Button
+=========================================================================================== */
+
+.PageTitleStyle3 p.IdentityButtonScroll {
+	position: absolute;
+	width: 51px;
+	height: 75px;
+	top: 207px;
+	left: 50%;
+	margin: 0 0 0 -25.5px;
+	padding: 0 !important;
+}
+
+.PageTitleStyle3 p.IdentityButtonScroll a {
+	display: block;
+	width: 51px;
+	height: 75px;
+	background-image: url("/image/ml_portal/about/identity/identity_icon_scroll.gif");
+	background-repeat: no-repeat;
+	font-size: 90%;
+	text-align: center;
+}
+.PageTitleStyle3 p.IdentityButtonScroll a:link,
+.PageTitleStyle3 p.IdentityButtonScroll a:visited {
+	color: #333a3d;
+	text-decoration: none;
+	background-position: 0 bottom;
+}
+.PageTitleStyle3 p.IdentityButtonScroll a:hover,
+.PageTitleStyle3 p.IdentityButtonScroll a:active {
+	color: #333a3d;
+	text-decoration: none;
+	background-position: -51px bottom;
+}
+
+
+
+/* [-] Contents Navigation
+=========================================================================================== */
+
+#IdentityNavi {
+	position: relative;
+	z-index: 8;
+}
+.NaviFixed #IdentityNavi {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+}
+
+#IdentityNavi .Inner {
+	width: 965px;
+	margin: 0 auto;
+	background: url("/image/ml_portal/about/identity/identity_navi_bg.png") no-repeat;
+}
+
+#IdentityNavi ul {
+	height: 70px;
+	background: url("/image/ml_portal/about/identity/identity_navi_indicator.png") no-repeat -944px 0;
+}
+
+#IdentityNavi li {
+	float: left;
+	width: 193px;
+	height: 70px;
+	overflow: hidden;
+}
+
+#IdentityNavi li a {
+	display: block;
+	width: 193px;
+	height: 140px;
+}
+#IdentityNavi li a:link,
+#IdentityNavi li a:visited {margin-top: 0;}
+#IdentityNavi li a:hover,
+#IdentityNavi li a:active {margin-top: -70px;}
+#IdentityNavi li.Current a {margin-top: -70px !important;}
+
+.NaviFixed #IdentityNavi ul {height: 73px;}
+
+
+
+/* [-] Box
+=========================================================================================== */
+
+.IdentityBox {position: relative}
+
+.IdentityVisualArea {
+	position: relative;
+	width: 965px;
+	height: 500px;
+	overflow: hidden;
+}
+
+.IdentityTextArea:before {
+	content: "";
+	position: absolute;
+	display: block;
+	width: 37px;
+	height: 19px;
+	top: -19px;
+	left: 50%;
+	margin-left: -18.5px;
+	background: url("/image/ml_portal/about/identity/identity_visual_mark_01.gif");
+}
+
+.IdentityVisualArea .bg {
+	position: relative;
+}
+.IdentityVisualArea .bg img {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+#IdentityVisual042 {top: -20px; left: 520px;}
+#IdentityVisual043 {top: -20px; left: 520px;}
+#IdentityVisual044 {top: -20px; left: 520px;}
+#IdentityVisual045 {top: -20px; left: 520px;}
+#IdentityVisual052 {top: 345px; left: 150px;}
+#IdentityVisual053 {top: 345px; left: 150px;}
+
+.IdentityVisualArea h2 {
+	margin: 0;
+	padding: 0;
+	background: none;
+}
+
+.IdentityOneVisualArea:before {
+	content: "";
+	position: absolute;
+	display: block;
+	width: 37px;
+	height: 19px;
+	top: -19px;
+	left: 50%;
+	margin-left: -18.5px;
+	background: url(/image/ml_portal/about/identity/identity_visual_mark_01.gif);
+}
+.IdentityOneVisualArea {
+	position: relative;
+	margin-top: 1px;
+	background-color: #e7eeef;
+}
+
+.IdentityTextArea {
+	position: relative;
+	background-color: #e7eeef;
+}
+
+.IdentityColumn1 {
+	width: 412px;
+	padding: 70px 0 20px 70px;
+}
+
+.IdentityBox .PageTop {margin-right: 30px;}
+
+.bgNone {
+	margin-top: 0!important;
+	background: #e7eeef!important;
+}
+.beforeBgNone:before { background: none!important; }
+.afterBgNone:after { background: none!important; }
+.mt0 { margin-top: 0px!important; }
+.pt0 { padding-top: 0px!important; }
+.pb10 { padding-bottom: 10px!important; }
+
+
+/* [-] List Box
+=========================================================================================== */
+
+.IdentityList li {
+	zoom: 1;
+}
+
+.IdentityList li:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.IdentityList li a {
+	display: block;
+	background-image: url("/image/ml_portal/about/identity/identity_icon_next_03.gif");
+	background-repeat: no-repeat;
+	font-size: 83%;
+	line-height: 140%;
+	overflow: hidden;
+	text-decoration: none;
+}
+
+.IdentityList li a:link,
+.IdentityList li a:visited {
+	background-color: #fff;
+	background-position: 0 center;
+	color: #666;
+}
+.IdentityList li a:hover,
+.IdentityList li a:active {
+	background-color: #e50027;
+	background-position: 395px center;
+	color: #fff;
+}
+
+.IdentityList li .Img {
+	position: relative;
+	float: left;
+	width: 130px;
+	height: 100px;
+}
+
+.IdentityList li .Inner:after {
+	content: "";
+	position: absolute;
+	display: block;
+	width: 10px;
+	height: 19px;
+	top: 50%;
+	left: -10px;
+	margin-top: -10px;
+	background-image: url("/image/ml_portal/about/identity/identity_thumb_mark_01.gif");
+	background-repeat: no-repeat;
+}
+.IdentityList li a:link .Inner:after,
+.IdentityList li a:visited .Inner:after {background-position: 0 0;}
+.IdentityList li a:hover .Inner:after,
+.IdentityList li a:active .Inner:after {background-position: 0 -19px;}
+
+.IdentityList li .Inner {
+	position: relative;
+	float: right;
+	width: 237px;
+	min-height: 82px;
+	padding: 12px 30px 5px 15px;
+}
+.IdentityList li.FirstItem {margin-top: 30px;}
+.IdentityList li.FirstItem .Inner {padding-top: 13px;}
+
+.IdentityList li a:link .Inner,
+.IdentityList li a:visited .Inner {border-top: solid 1px #ddd;}
+.IdentityList li a:hover .Inner,
+.IdentityList li a:active .Inner {border-top: solid 1px #e50027;}
+.IdentityList li.FirstItem a:link .Inner,
+.IdentityList li.FirstItem a:visited .Inner,
+.IdentityList li.FirstItem a:hover .Inner,
+.IdentityList li.FirstItem a:active .Inner {border-top: 0 none;}
+
+.IdentityList li .Inner strong {
+	display: block;
+	margin-bottom: 5px;
+	font-size: 105%;
+}
+.IdentityList li a:link .Inner strong,
+.IdentityList li a:visited .Inner strong {color: #000;}
+.IdentityList li a:hover .Inner strong,
+.IdentityList li a:active .Inner strong {color: #fff;}
+
+
+
+/* [-] Button
+=========================================================================================== */
+
+.IdentityButton {
+	width: 270px;
+	margin-top: 20px;
+}
+
+.IdentityButton a {
+	display: block;
+	padding: 8px 25px 8px 15px;
+	text-align: center;
+	font-size: 90%;
+	background-image: url("/image/ml_portal/about/identity/identity_icon_next_05.gif");
+	background-repeat: no-repeat;
+}
+.IdentityButton a:link,
+.IdentityButton a:visited {
+	color: #333;
+	border: solid 2px #666;
+	background-color: transparent;
+	text-decoration: none;
+	background-position: -145px center;
+}
+.IdentityButton a:hover,
+.IdentityButton a:active{
+	color: #fff;
+	border: solid 2px #e50027;
+	background-color: #e50027;
+	text-decoration: none;
+	background-position: 250px center;
+}
+
+.IdentityButton a.IdentityBack {
+	padding: 8px 15px 8px 25px;
+	background-image: url("/image/ml_portal/about/identity/identity_icon_back_05.gif");
+}
+.IdentityButton a.IdentityBack:link,
+.IdentityButton a.IdentityBack:visited {
+	background-position: 0 center;
+}
+.IdentityButton a.IdentityBack:hover,
+.IdentityButton a.IdentityBack:active{
+	background-position: -395px center;
+}
+
+#IdentityButton03 {
+	width: 60px;
+	height: 70px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+#IdentityButton03 a {
+	display: block;
+	width: 60px;
+	height: 140px;
+}
+#IdentityButton03 a:link,
+#IdentityButton03 a:visited {margin-top: 0;}
+#IdentityButton03 a:hover,
+#IdentityButton03 a:active {margin-top: -70px;}
+
+
+
+/* [-] Next/Back Button
+=========================================================================================== */
+
+.IdentityButtonNext {display: none;}
+
+.JS .IdentityButtonNext {
+	display: block;
+	position: absolute;
+	width: 41px;
+	height: 41px;
+	top: 50%;
+	right: 15px;
+	margin-top: -20.5px;
+	overflow: hidden;
+}
+.IdentityButtonNext a {
+	display: block;
+	width: 82px;
+	height: 41px;
+}
+.IdentityButtonNext a:link,
+.IdentityButtonNext a:visited {margin-left: 0;}
+.IdentityButtonNext a:hover,
+.IdentityButtonNext a:active {margin-left: -41px;}
+
+.IdentityButtonBack {display: none;}
+
+.JS .IdentityButtonBack {
+	display: block;
+	position: absolute;
+	width: 41px;
+	height: 41px;
+	top: 50%;
+	left: 15px;
+	margin-top: -20.5px;
+	overflow: hidden;
+}
+.IdentityButtonBack a {
+	display: block;
+	width: 82px;
+	height: 41px;
+}
+.IdentityButtonBack a:link,
+.IdentityButtonBack a:visited {margin-left: -41px;}
+.IdentityButtonBack a:hover,
+.IdentityButtonBack a:active {margin-left: 0;}
+
+
+
+/* [-] YouTube
+=========================================================================================== */
+
+.IdentityList .LinkMovie {position: relative;}
+
+.IdentityList .LinkMovie .Icon {
+	position: absolute;
+	display: block;
+	width: 47px;
+	height: 47px;
+	top: 50%;
+	left: 41.5px;
+	margin: -23.5px 0 0 0;
+	background-image: url("/image/ml_portal/about/identity/identity_icon_play_s.png");
+	background-repeat: no-repeat;
+}
+.IdentityList a.LinkMovie:link .Icon,
+.IdentityList a.LinkMovie:visited .Icon {background-position: 0 0;}
+.IdentityList a.LinkMovie:hover .Icon,
+.IdentityList a.LinkMovie:active .Icon {background-position: -47px 0;}
+
+#ModalCover {
+	position: fixed;
+	z-index: 9;
+	display: none;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: #fff;
+}
+* html #ModalCover {position: absolute;}
+
+#ModalCover div {
+	position: relative;
+	width: 965px;
+	height: 600px;
+	top: 50%;
+	left: 50%;
+	margin: -300px 0 0 -482.5px;
+	background: url("/image/ml_portal/about/identity/top_bg_youtube.png") no-repeat center center;
+}
+* html #ModalCover div {position: absolute;}
+
+#ModalYouTube {
+	position: fixed;
+	z-index: 10;
+	display: none;
+	width: 853px;
+	height: 530px;
+	top: 50%;
+	left: 50%;
+	margin: -265px 0 0 -426.5px;
+	background-color: #000;
+}
+* html #ModalYouTube {position: absolute;}
+
+#ModalYouTube .Title {
+	position: absolute;
+	height: 50px;
+	bottom: 0;
+	left: 0;
+	background-color: #f2f2f2;
+}
+
+#ModalYouTube .Title p {
+	display: table-cell;
+	width: 753px;
+	height: 50px;
+	padding: 0 80px 0 20px;
+	vertical-align: middle;
+	font-size: 90%;
+	font-weight: bold;
+	line-height: 130%;
+	color: #575757;
+}
+* html #ModalYouTube .Title p {
+	display: block;
+	height: 35px;
+	padding-top: 15px;
+}
+*:first-child+html #ModalYouTube .Title p {
+	display: block;
+	height: 35px;
+	padding-top: 15px;
+}
+
+#ModalYouTube .BtnClose {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	line-height: 130%;
+}
+* html #ModalYouTube .BtnClose {right: -1px;}
+
+#ModalYouTube .BtnClose a {
+	display: table-cell;
+	min-width: 50px;
+	height: 30px;
+	padding: 20px 5px 0;
+	font-size: 76%;
+	text-align: center;
+	background-image: url(/image/cn/r1/icon/icon_close.gif);
+	background-position: center 7px;
+	background-repeat: no-repeat;
+	vertical-align: middle;
+}
+* html #ModalYouTube .BtnClose a {
+	float: left;
+	display: block;
+	width: 50px;
+	height: 25px;
+	padding: 25px 5px 0;
+}
+*:first-child+html #ModalYouTube .BtnClose a {
+	display: block;
+	height: 25px;
+	padding: 25px 5px 0;
+}
+
+#ModalYouTube .BtnClose a:link,
+#ModalYouTube .BtnClose a:visited {
+	color: #fff;
+	background-color: #e60027;
+	text-decoration: none;
+}
+#ModalYouTube .BtnClose a:hover,
+#ModalYouTube .BtnClose a:active {
+	color: #fff;
+	background-color: #b1000e;
+	text-decoration: none;
+}
+
+
+
+/* [-] Triangle
+=========================================================================================== */
+
+.IdentityTriangle {
+	display: block;
+	position: absolute;
+	left: 590px;
+	top: 50%;
+	width: 275px;
+	height: 255px;
+	margin-top: -140px;
+}
+
+.IdentityTriangleImg1 {
+	position: absolute;
+	width: 112px;
+	height: 103px;
+	top: 0px;
+	left: 82px;
+	overflow: hidden;
+}
+
+.IdentityTriangleImg2 {
+	position: absolute;
+	width: 184px;
+	height: 65px;
+	top: 104px;
+	left: 46px;
+	overflow: hidden;
+}
+
+.IdentityTriangleImg3 {
+	position: absolute;
+	width: 275px;
+	height: 78px;
+	top: 176px;
+	left: 0;
+	overflow: hidden;
+}
+
+.IdentityTriangleImg1 a,
+.IdentityTriangleImg2 a,
+.IdentityTriangleImg3 a {display: block;}
+
+.IdentityTriangleImg1 a:link,
+.IdentityTriangleImg1 a:visited {margin: 0 0 0 -275px;}
+.IdentityTriangleImg2 a:link,
+.IdentityTriangleImg2 a:visited {margin: -110px 0 0 -275px;}
+.IdentityTriangleImg3 a:link,
+.IdentityTriangleImg3 a:visited {margin: -180px 0 0 -275px;}
+.IdentityTriangleImg1 a:hover,
+.IdentityTriangleImg1 a:active {margin: 0;}
+.IdentityTriangleImg2 a:hover,
+.IdentityTriangleImg2 a:active {margin: -110px 0 0 0;}
+.IdentityTriangleImg3 a:hover,
+.IdentityTriangleImg3 a:active {margin: -180px 0 0 0;}
+
+.IdentityTriangleImg1 a.Current,
+.IdentityTriangleImg2 a.Current,
+.IdentityTriangleImg3 a.Current {margin-left: 0 !important;}
+
+.IdentityTriangleWithText {
+	position: relative;
+	width: 634px;
+	height: 255px;
+	margin: 30px auto 40px auto;
+}
+
+.IdentityTriangleWithText .IdentityTriangleTextL {
+	position: absolute;
+	width: 249px;
+	height: 184px;
+	bottom: 0;
+	left: 70px;
+	overflow: hidden;
+}
+
+.IdentityTriangleWithText .IdentityTriangleTextR {
+	position: absolute;
+	width: 315px;
+	height: 184px;
+	bottom: 0;
+	right: 0;
+	overflow: hidden;
+}
+
+.IdentityTriangleWithText .IdentityTriangleImg1 {left: 262px;}
+.IdentityTriangleWithText .IdentityTriangleImg2 {left: 226px;}
+.IdentityTriangleWithText .IdentityTriangleImg3 {left: 180px;}
+
+.JS .IdentityTriangleWithText p {display: none;}
+
+
+
+/* [-] About
+=========================================================================================== */
+
+#IdentityAbout {
+	margin-top: -70px;
+	padding-top: 70px;
+	z-index: 5;
+}
+
+.JS #IdentityAboutSliderDiv {
+	position: relative;
+	width: 965px;
+	overflow: hidden;
+}
+
+.JS #IdentityAboutSlider {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 1930px;
+	background-color: #e7eeef;
+	zoom: 1;
+}
+
+.JS #IdentityAboutSlider:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.JS #IdentityAbout1,
+.JS #IdentityAbout2 {
+	float: left;
+	width: 965px;
+}
+
+.NaviFixed #IdentityAbout {margin-top: 0;}
+
+#IdentityAbout1 .IdentityTextArea {padding: 50px 60px;}
+#IdentityAbout2 .IdentityTextArea {padding: 0 70px 50px;}
+.JS #IdentityAbout2 .IdentityTextArea {padding: 50px 70px;}
+
+#IdentityAbout1,
+#IdentityAbout2 {position: relative;}
+
+#IdentityAbout2 h2 {
+	margin: 0 0 15px;
+	padding: 0;
+	background-image: none;
+	color: #000;
+	text-align: center;
+	font-size: 120%;
+	font-weight: bold;
+}
+
+#IdentityAbout .IdentityButton {
+	width: 200px;
+	margin: 0 auto;
+}
+#IdentityAbout .IdentityButton a:link,
+#IdentityAbout .IdentityButton a:visited {
+	background-position: -215px center;
+}
+#IdentityAbout .IdentityButton a:hover,
+#IdentityAbout .IdentityButton a:active{
+	background-position: 180px center;
+}
+
+#IdentityAbout2 .IdentityButton {width: 240px;}
+#IdentityAbout2 .IdentityButton a.IdentityBack:link,
+#IdentityAbout2 .IdentityButton a.IdentityBack:visited {
+	background-position: 0 center;
+}
+#IdentityAbout2 .IdentityButton a.IdentityBack:hover,
+#IdentityAbout2 .IdentityButton a.IdentityBack:active{
+	background-position: -395px center;
+}
+
+
+
+/* [-] Mission
+=========================================================================================== */
+
+#IdentityMission {
+	margin-top: -70px;
+	padding-top: 70px;
+	z-index: 4;
+}
+
+#IdentityMission .IdentityHeading {
+	position: absolute;
+	width: 310px;
+	height: 310px;
+	top: 95px;
+	left: 70px;
+	background-color: #e50027;
+}
+
+
+
+/* [-] Values
+=========================================================================================== */
+
+#IdentityValues {
+	margin-top: -70px;
+	padding-top: 70px;
+	z-index: 3;
+}
+
+.JS #IdentityValuesSliderDiv {
+	position: relative;
+	width: 965px;
+	overflow: hidden;
+}
+
+.JS #IdentityValuesSlider {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 1930px;
+	background-color: #e7eeef;
+	zoom: 1;
+}
+
+.JS #IdentityValuesSlider:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.JS #IdentityValues1,
+.JS #IdentityValues2 {
+	float: left;
+	width: 965px;
+}
+
+#IdentityValues .IdentityHeading {
+	position: absolute;
+	width: 310px;
+	height: 310px;
+	top: 95px;
+	left: 70px;
+	background-color: #e50027;
+}
+
+.JS #IdentityValues .IdentityTriangle p {display: none;}
+
+#IdentityValues1 .IdentityColumn1 {
+	padding: 100px 0 50px 70px;
+}
+
+#IdentityValues2 h2 {
+	padding-top: 80px;
+	text-align: center;
+}
+
+#IdentityValues2 dl {
+	width: 412px;
+	padding: 50px 0 0 70px;
+}
+
+#IdentityValues2 dt {
+	display: none;
+}
+
+#IdentityValues2 dd {
+	display: table;
+	padding: 4px 0 0 96px;
+	background: no-repeat 0 50%;
+}
+
+#IdentityValues2 dd span {
+	display: table-cell;
+	height: 6.4em;
+	font-size: 83%;
+	vertical-align: middle;
+}
+
+* html #IdentityValues2 dd span {
+	display: block;
+	padding-top: 25px;
+}
+
+*:first-child+html #IdentityValues2 dd span {
+	display: block;
+	padding-top: 25px;
+}
+
+#IdentityValues2 dd#IdentityValue1 {background-image: url("/image/ml_portal/about/identity/identity_values_1.gif");}
+#IdentityValues2 dd#IdentityValue2 {background-image: url("/image/ml_portal/about/identity/identity_values_2.gif");}
+#IdentityValues2 dd#IdentityValue3 {background-image: url("/image/ml_portal/about/identity/identity_values_3.gif");}
+
+#IdentityValues2 .IdentityButton {
+	width: 300px;
+	margin-left: 70px;
+}
+
+
+
+/* [-] Vision
+=========================================================================================== */
+
+#IdentityVision {
+	margin-top: -70px;
+	padding-top: 70px;
+	z-index: 2;
+}
+
+#IdentityVision .IdentityHeading {
+	position: absolute;
+	width: 310px;
+	height: 310px;
+	top: 95px;
+	left: 70px;
+	background-color: #009fe3;
+}
+
+#IdentityVision h3 {
+	margin: 30px 0 15px 0;
+	color: #006996;
+	font-size: 120%;
+	font-weight: normal;
+}
+
+#IdentityVision h3 + .IdentityList li.FirstItem {margin-top: 0;}
+
+#IdentityVision .IdentityList li a {background-image: url("/image/ml_portal/about/identity/identity_icon_next_04.gif");}
+
+#IdentityVision .IdentityList li a:hover,
+#IdentityVision .IdentityList li a:active {background-color: #0083ba;}
+
+#IdentityVision .IdentityList li .Inner:after {background-image: url("/image/ml_portal/about/identity/identity_thumb_mark_02.gif");}
+
+#IdentityVision .IdentityList li a:hover .Inner,
+#IdentityVision .IdentityList li a:active .Inner {border-top: solid 1px #0083ba;}
+#IdentityVision .IdentityList li.FirstItem a:link .Inner,
+#IdentityVision .IdentityList li.FirstItem a:visited .Inner,
+#IdentityVision .IdentityList li.FirstItem a:hover .Inner,
+#IdentityVision .IdentityList li.FirstItem a:active .Inner {border-top: 0 none;}
+
+
+
+/* [-] Movie
+=========================================================================================== */
+
+#IdentityMovie {
+	margin-top: -70px;
+	padding-top: 70px;
+	z-index: 1;
+}
+
+#IdentityMovie .IdentityTextArea:before {background: url("/image/ml_portal/about/identity/identity_visual_mark_02.gif");}
+
+#IdentityMovie .IdentityTextArea {
+	margin-top: 1px;
+	background: url("/image/ml_portal/about/identity/identity_box5_bg.gif") repeat-y transparent;
+}
+
+#IdentityMovie h2 {
+	position: absolute;
+	width: 292px;
+	height: 84px;
+	top: 190px;
+	left: 600px;
+}
+
+#IdentityMovie {margin-bottom: 30px;}
+
+#IdentityMovie .LeftColumn {
+	float: left;
+	width: 482px;
+}
+#IdentityMovie .RightColumn {
+	float: right;
+	width: 482px;
+}
+
+#IdentityMovie div.Inner {
+	position: relative;
+	padding: 20px 30px 30px;
+}
+#IdentityMovie .TextStyle2 {line-height: 150%;}
+#IdentityMovie div.Inner h3 {
+	margin-bottom: 5px;
+	font-size: 90%;
+	color: #000;
+}
+
+#IdentityMovie .Img {position: relative;}
+
+#IdentityMovie div.Inner:after {
+	content: "";
+	position: absolute;
+	display: block;
+	width: 37px;
+	height: 19px;
+	top: -19px;
+	left: 50%;
+	margin-left: -18.5px;
+	background: url("/image/ml_portal/about/identity/identity_visual_mark_01.gif");
+}
+
+#IdentityMovie a.LinkMovie .Icon,
+#IdentityMovie a.LinkBook .Icon {
+	position: absolute;
+	display: block;
+	width: 62px;
+	height: 62px;
+	top: 50%;
+	left: 50%;
+	margin: -31px 0 0 -31px;
+	background-repeat: no-repeat;
+}
+#IdentityMovie a.LinkMovie .Icon {background-image: url("/image/ml_portal/about/identity/identity_icon_play.png");}
+#IdentityMovie a.LinkBook .Icon {background-image: url("/image/ml_portal/about/identity/identity_icon_book.png");}
+
+#IdentityMovie a.LinkMovie:link .Icon,
+#IdentityMovie a.LinkMovie:visited .Icon,
+#IdentityMovie a.LinkBook:link .Icon,
+#IdentityMovie a.LinkBook:visited .Icon {background-position: 0 0;}
+#IdentityMovie a.LinkMovie:hover .Icon,
+#IdentityMovie a.LinkMovie:active .Icon,
+#IdentityMovie a.LinkBook:hover .Icon,
+#IdentityMovie a.LinkBook:active .Icon {background-position: -62px 0;}
+
+#IdentityMovie .IdentityButton {
+	float: left;
+	width: 180px;
+	margin: 0 15px 0 0;
+}
+
+#IdentityMovie .IdentityButton a {
+	padding: 5px 25px 5px 15px;
+}
+#IdentityMovie .IdentityButton a:link,
+#IdentityMovie .IdentityButton a:visited {
+	background-position: -235px center;
+}
+#IdentityMovie .IdentityButton a:hover,
+#IdentityMovie .IdentityButton a:active{
+	background-position: 160px center;
+}
+
+#IdentityMovie .IdentityList li .Img {
+	height: 90px;
+}
+
+#IdentityMovie .IdentityList li span.Inner {
+	width: 247px;
+	min-height: 72px;
+	padding: 12px 30px 5px 15px;
+}
+
+#IdentityMovie .IdentityList li a:link,
+#IdentityMovie .IdentityList li a:visited {
+	background-position: 10px center;
+}
+#IdentityMovie .IdentityList li a:hover,
+#IdentityMovie .IdentityList li a:active {
+	background-position: 405px center;
+}
+
+#IdentityMovie .IdentityList li.FirstItem {margin-top: 0;}
+
+#IdentityMovie div.Inner .IdentityInnerBox {
+	position: relative;
+	background-color: #fff;
+	margin-top: 30px;
+}
+#IdentityMovie div.Inner .IdentityInnerBox.FirstItem {
+	margin-top: 20px;
+}
+
+#IdentityMovie div.Inner .IdentityInnerBox h4 {
+	margin: 0;
+	border-left: solid 20px #e50027;
+}
+
+#IdentityMovie div.Inner .IdentityInnerBox h4 a {
+	position: relative;
+	display: block;
+	padding: 15px 30px 15px 15px;
+	font-weight: bold;
+	font-size: 90%;
+}
+#IdentityMovie div.Inner .IdentityInnerBox h4 a:link,
+#IdentityMovie div.Inner .IdentityInnerBox h4 a:visited {
+	color: #fff;
+	background: url(/image/cn/r1/icon/icon_link_right_l_white.gif) no-repeat 382px center #262626;
+}
+#IdentityMovie div.Inner .IdentityInnerBox h4 a:hover,
+#IdentityMovie div.Inner .IdentityInnerBox h4 a:active {
+	color: #fff;
+	text-decoration: none;
+	background: url(/image/cn/r1/icon/icon_link_right_l_white.gif) no-repeat 382px center #e50027;
+}
+#IdentityMovie div.Inner .IdentityInnerBox h4 span {
+	position: relative;
+	display: block;
+	padding: 10px 30px 10px 15px;
+	background-color: #262626;
+	color: #fff;
+	font-weight: bold;
+	font-size: 90%;
+}
+/*
+#IdentityMovie div.Inner .IdentityInnerBox h4 a:after {
+	content: "";
+	position: absolute;
+	display: block;
+	width: 37px;
+	height: 19px;
+	top: -19px;
+	left: 50%;
+	margin-left: -18.5px;
+	background: url(../image/identity_visual_mark_04.gif);
+}
+#IdentityMovie div.Inner .IdentityInnerBox h4 a:link:after,
+#IdentityMovie div.Inner .IdentityInnerBox h4 a:visited:after {
+	background-position: left top;
+}
+#IdentityMovie div.Inner .IdentityInnerBox h4 a:hover:after,
+#IdentityMovie div.Inner .IdentityInnerBox h4 a:active:after {
+	background-position: left bottom;
+}
+*/
+#IdentityMovie div.Inner .IdentityInnerBox .Text {
+	position: relative;
+	padding: 10px 15px 30px 15px;
+	font-size: 83%;
+}
+#IdentityMovie div.Inner .IdentityInnerBox .Text:after {
+	content: "";
+	position: absolute;
+	display: block;
+	width: 37px;
+	height: 19px;
+	top: -19px;
+	left: 50%;
+	margin-left: -18.5px;
+	background: url("/image/ml_portal/about/identity/identity_visual_mark_03.gif");
+}
+
+#IdentityMovie div.Inner .IdentityInnerBox .IdentityList li .Inner:after {
+	display: none;
+}

@@ -1,0 +1,561 @@
+@charset "UTF-8";
+
+
+
+
+/* **************************************************
+
+Name: sib_megamenu.css
+
+Description: CSS for Megamenu
+
+Create: 2018.06.28
+Update: 
+
+Copyright 2018 Hitachi, Ltd.
+
+***************************************************** */
+
+
+
+
+/* MegaMenu
+=========================================================================================== */
+
+
+#MegaMenu {
+	width: 965px;
+	margin: 0 auto;
+}
+#MegaMenu:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.MMGlobalNaviStyle {
+	float: left;
+}
+
+.MMGlobalNaviStyle a {
+	display: block;
+	line-height: 35px;
+	padding: 0 15px;
+	font-size: 83%;
+	position: relative;
+	z-index: 1;
+	text-align: center;
+}
+
+dt.MMGlobalNaviStyle a:link,
+dt.MMGlobalNaviStyle a:visited {
+	color: #333;
+	text-decoration: none;
+	z-index: 1;	
+}
+
+dt.MMGlobalNaviStyle a:hover,
+dt.MMGlobalNaviStyle a:active {
+	color: #fff;
+	text-decoration: none;
+	background-color: #b1000e;
+	z-index: 12;
+}
+
+dt.Mega a:after,
+.MMGlobalNaviStyle.MMSetMenu a.Active:after {
+content: "";
+position: absolute;
+width: 0;
+height: 0;
+bottom: -8px;
+left: 50%;
+margin-left: -8px;
+border-left: solid 8px transparent;
+border-right: solid 8px transparent;
+}
+
+dt.Mega a:hover:after,
+dt.Mega a:active:after,
+.MMGlobalNaviStyle.MMSetMenu a.Active:after {
+	border-top: solid 8px rgba(177,0,14,1.00);
+}
+
+.MMGlobalNaviStyle.MMSetMenu a {
+	padding: 0 15px;
+}
+
+.MMGlobalNaviStyle.MMSetMenu a:hover,
+.MMGlobalNaviStyle.MMSetMenu a:active,
+.MMGlobalNaviStyle.MMSetMenu a.Active {
+	background-color: #b1000e;
+	color: #fff;
+	z-index: 12;
+}
+
+.MMGlobalNaviStyle.Current a {
+	padding: 0;
+	line-height: 45px;
+}
+.MMGlobalNaviStyle.Current a:link,
+.MMGlobalNaviStyle.Current a:visited { color: #000; }
+.MMGlobalNaviStyle.Current a:hover,
+.MMGlobalNaviStyle.Current a:active { color: #fff; }
+.MMGlobalNaviStyle.Current a em {
+	display: block;
+	padding: 0 15px;
+	background: url(../../../image/cn/r1/bg_g_navi_current.gif) no-repeat center bottom;
+	font-weight: bold;
+	font-style: normal;
+	line-height: 35px;
+}
+.MMGlobalNaviStyle.Current a strong {
+	display: block;
+	padding: 0 15px;
+	background: #b1000e url(../../../image/cn/r1/bg_g_navi_current.gif) no-repeat center bottom;
+	color: #fff;
+	line-height: 35px;
+}
+
+.MMGlobalNaviStyle.Current.MMSetMenu a {
+	padding: 0;
+	line-height: 45px;
+}
+
+.MMGlobalNaviStyle.Current.MMSetMenu a:link,
+.MMGlobalNaviStyle.Current.MMSetMenu a:visited {
+	color: #000;
+}
+.MMGlobalNaviStyle.Current.MMSetMenu a:hover,
+.MMGlobalNaviStyle.Current.MMSetMenu a:active,
+.MMGlobalNaviStyle.Current.MMSetMenu a.Active {
+	background-color: #b1000e;
+	color: #fff;
+}
+.MMGlobalNaviStyle.Current.MMSetMenu a em {
+	display: block;
+	padding: 0 15px;
+	font-weight: bold;
+	font-style: normal;
+	line-height: 35px;
+}
+.MMGlobalNaviStyle.Current.MMSetMenu a:link em,
+.MMGlobalNaviStyle.Current.MMSetMenu a:visited em {
+	background: url(../../../image/cn/r1/bg_g_navi_current.gif) no-repeat center bottom;
+}
+.MMGlobalNaviStyle.Current.MMSetMenu a:hover em,
+.MMGlobalNaviStyle.Current.MMSetMenu a:active em,
+.MMGlobalNaviStyle.Current.MMSetMenu a.Active em {
+	background-image: none;
+}
+
+.MMGlobalNaviStyle.Current.MMSetMenu a.Strong:link,
+.MMGlobalNaviStyle.Current.MMSetMenu a.Strong:visited {
+	background-color: #b1000e;
+}
+.MMGlobalNaviStyle.Current.MMSetMenu a.Strong:hover,
+.MMGlobalNaviStyle.Current.MMSetMenu a.Strong:active,
+.MMGlobalNaviStyle.Current.MMSetMenu a.Strong.Active {
+	background-color: #b1000e;
+}
+
+.MMGlobalNaviStyle.Current.MMSetMenu a.Strong strong {
+	display: block;
+	padding: 0 15px;
+	color: #fff;
+	line-height: 35px;
+}
+.MMGlobalNaviStyle.Current.MMSetMenu a.Strong:link strong,
+.MMGlobalNaviStyle.Current.MMSetMenu a.Strong:visited strong {
+	background: url(../../../image/cn/r1/bg_g_navi_current.gif) no-repeat center bottom;
+}
+.MMGlobalNaviStyle.Current.MMSetMenu a.Strong:hover strong,
+.MMGlobalNaviStyle.Current.MMSetMenu a.Strong:active strong,
+.MMGlobalNaviStyle.Current.MMSetMenu a.Strong.Active strong {
+	background-image: none;
+}
+
+.MMSet {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	min-width: 965px;
+	height: 0;
+	padding: 0 0 16px;
+	z-index: 3;
+	background-color: transparent;
+	background-image: none;
+	overflow: hidden;
+}
+
+
+/* PC */
+
+.MM2Container {
+/*	height: calc(100% - 24px);*/
+	padding-top: 30px;
+	background: rgba(255,255,255,.9) url(../../../image/cn/r1/bg_megamenu_shadow.png) repeat-x;
+	-webkit-box-shadow: 0 0 16px rgba(0,0,0,.12);
+	box-shadow: 0 0 16px rgba(0,0,0,.12);
+}
+
+.MM2ColumnArea {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	width: 965px;
+	margin: 0 auto;
+	padding: 15px 0;
+}
+
+.MM2ColumnArea li {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	width: 230px;
+	margin: 0 15px 20px 0;
+}
+
+.MM2ColumnArea li:nth-child(4n) {
+	margin-right: 0;
+}
+
+.MM2ColumnArea li a {
+	display: inline-block;
+	padding: 12px 0 12px 50px;
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 40px 40px;
+	color: #222;
+	font-size: 90%;
+	line-height: 130%;
+	text-decoration: none;
+}
+
+.MM2ColumnArea li a:hover,
+.MM2ColumnArea li a:active {
+	color: #222;
+	text-decoration: none;
+}
+
+#MegaMenu li.mm_security a,
+#MegaMenu li.mm_security a:link,
+#MegaMenu li.mm_security a:visited {
+	background-image: url(../../../image/en/r5/icon/megamenu/security-icon-red.png);
+}
+
+#MegaMenu li.mm_water a,
+#MegaMenu li.mm_water a:link,
+#MegaMenu li.mm_water a:visited {
+	background-image: url(../../../image/en/r5/icon/megamenu/water-icon-red.png);
+}
+
+#MegaMenu li.mm_rd a,
+#MegaMenu li.mm_rd a:link,
+#MegaMenu li.mm_rd a:visited {
+	background-image: url(../../../image/en/r5/icon/megamenu/rd-icon-red.png);
+}
+
+#MegaMenu li.mm_analytics a,
+#MegaMenu li.mm_analytics a:link,
+#MegaMenu li.mm_analytics a:visited {
+	background-image: url(../../../image/en/r5/icon/megamenu/analytics-icon-red.png);
+}
+
+#MegaMenu li.mm_ai a,
+#MegaMenu li.mm_ai a:link,
+#MegaMenu li.mm_ai a:visited {
+	background-image: url(../../../image/en/r5/icon/megamenu/ai-icon-red.png);
+}
+
+#MegaMenu li.mm_energy a,
+#MegaMenu li.mm_energy a:link,
+#MegaMenu li.mm_energy a:visited {
+	background-image: url(../../../image/en/r5/icon/megamenu/energy-icon-red.png);
+}
+
+#MegaMenu li.mm_transportation a,
+#MegaMenu li.mm_transportation a:link,
+#MegaMenu li.mm_transportation a:visited {
+	background-image: url(../../../image/en/r5/icon/megamenu/transportation-icon-red.png);
+}
+
+#MegaMenu li.mm_manufacturing a,
+#MegaMenu li.mm_manufacturing a:link,
+#MegaMenu li.mm_manufacturing a:visited {
+	background-image: url(../../../image/en/r5/icon/megamenu/manufacturing-icon-red.png);
+}
+
+#MegaMenu li.mm_urban a,
+#MegaMenu li.mm_urban a:link,
+#MegaMenu li.mm_urban a:visited {
+	background-image: url(../../../image/en/r5/icon/megamenu/urban-icon-red.png);
+}
+
+#MegaMenu li.mm_robotics a,
+#MegaMenu li.mm_robotics a:link,
+#MegaMenu li.mm_robotics a:visited {
+	background-image: url(../../../image/en/r5/icon/megamenu/robotics-icon-red.png);
+}
+
+#MegaMenu li.mm_life_economy a,
+#MegaMenu li.mm_life_economy a:link,
+#MegaMenu li.mm_life_economy a:visited {
+	background-image: url(../../../image/en/r5/icon/megamenu/life_economy-icon-red.png);
+}
+
+#MegaMenu li.mm_security a:hover,
+#MegaMenu li.mm_security a:active {
+	background-image: url(../../../image/en/r5/icon/megamenu/security-icon-red-over.png);
+}
+
+#MegaMenu li.mm_water a:hover,
+#MegaMenu li.mm_water a:active {
+	background-image: url(../../../image/en/r5/icon/megamenu/water-icon-red-over.png);
+}
+
+#MegaMenu li.mm_rd a:hover,
+#MegaMenu li.mm_rd a:active {
+	background-image: url(../../../image/en/r5/icon/megamenu/rd-icon-red-over.png);
+}
+
+#MegaMenu li.mm_analytics a:hover,
+#MegaMenu li.mm_analytics a:active {
+	background-image: url(../../../image/en/r5/icon/megamenu/analytics-icon-red-over.png);
+}
+
+#MegaMenu li.mm_ai a:hover,
+#MegaMenu li.mm_ai a:active {
+	background-image: url(../../../image/en/r5/icon/megamenu/ai-icon-red-over.png);
+}
+
+#MegaMenu li.mm_energy a:hover,
+#MegaMenu li.mm_energy a:active {
+	background-image: url(../../../image/en/r5/icon/megamenu/energy-icon-red-over.png);
+}
+
+#MegaMenu li.mm_transportation a:hover,
+#MegaMenu li.mm_transportation a:active {
+	background-image: url(../../../image/en/r5/icon/megamenu/transportation-icon-red-over.png);
+}
+
+#MegaMenu li.mm_manufacturing a:hover,
+#MegaMenu li.mm_manufacturing a:active {
+	background-image: url(../../../image/en/r5/icon/megamenu/manufacturing-icon-red-over.png);
+}
+
+#MegaMenu li.mm_urban a:hover,
+#MegaMenu li.mm_urban a:active {
+	background-image: url(../../../image/en/r5/icon/megamenu/urban-icon-red-over.png);
+}
+
+#MegaMenu li.mm_robotics a:hover,
+#MegaMenu li.mm_robotics a:active {
+	background-image: url(../../../image/en/r5/icon/megamenu/robotics-icon-red-over.png);
+}
+
+#MegaMenu li.mm_life_economy a:hover,
+#MegaMenu li.mm_life_economy a:active {
+	background-image: url(../../../image/en/r5/icon/megamenu/life_economy-icon-red-over.png);
+}
+
+
+/* SP */
+
+.hasMegaMenuSP {
+	position: relative;
+}
+
+.hasMegaMenuSP > a::after,
+.hasMegaMenuSP > a strong::after {
+	content: none !important;
+}
+
+.MegaMenuSpBtn {
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 32px;
+	margin: 0;
+	padding: 0;
+	border-style: none;
+	border-top: 1px solid #444;
+	border-left: 1px solid #444;
+	border-radius: 0;
+	background-color: #262626;
+	background-image: url(../../../image/cn/r1/icon/icon_down_l_white_hd.gif);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 16px 16px;
+	overflow: hidden;
+	outline: none;
+	font-size: inherit;
+	cursor: pointer;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+.MegaMenuSpBtn.open {
+	background-image: url(../../../image/cn/r1/icon/icon_up_l_white_hd.gif);
+}
+
+.MegaMenuSpBtn span {
+	display: block;
+	visibility: hidden;
+	padding: 12px 0;
+	font-size: 90%;
+	line-height: 140%;
+}
+
+.MegaMenuSP {
+	height: 0;
+	overflow: hidden;
+	-webkit-transition: height .3s ease-in-out;
+	transition: height .3s ease-in-out;
+}
+
+.MegaMenuSP li a {
+	display: block;
+	position: relative;
+	padding: 14px 32px 14px 52px;
+	background-repeat: no-repeat;
+	background-size: 28px;
+	background-position: 15px;
+	font-size: 81.25%;
+	line-height: 140%;
+	text-decoration: none;
+}
+
+.MegaMenuSP li a:link,
+.MegaMenuSP li a:visited {
+	color: #ccc;
+	background-color: #262626;
+	border-top: solid 1px #444;
+}
+
+.MegaMenuSP li a:hover,
+.MegaMenuSP li a:active {
+	color: #fff;
+	background-color: #b1000e;
+	border-top: solid 1px #b1000e;
+}
+
+.MegaMenuSP li a:after {
+	content: "";
+	position: absolute;
+	display: block;
+	width: 16px;
+	height: 16px;
+	top: 50%;
+	margin: -8px 0 0;
+	background-image: url(../../../image/cn/r1/icon/icon_link_right_l_white_hd.gif);
+	background-repeat: no-repeat;
+	background-size: 16px 16px;
+	-moz-background-size: 16px 16px;
+	-webkit-background-size: 16px 16px;
+	-o-background-size: 16px 16px;
+	-ms-background-size: 16px 16px;
+}
+
+.MegaMenuSP li a:link:after,
+.MegaMenuSP li a:visited:after { right: 7px; }
+.MegaMenuSP li a:hover:after,
+.MegaMenuSP li a:active:after { right: 5px; }
+
+.MegaMenuSP li.mm_security a {
+	background-image: url(../../../image/en/r5/icon/megamenu/security-icon-white.png);
+}
+
+.MegaMenuSP li.mm_water a {
+	background-image: url(../../../image/en/r5/icon/megamenu/water-icon-white.png);
+}
+
+.MegaMenuSP li.mm_rd a {
+	background-image: url(../../../image/en/r5/icon/megamenu/rd-icon-white.png);
+}
+
+.MegaMenuSP li.mm_analytics a {
+	background-image: url(../../../image/en/r5/icon/megamenu/analytics-icon-white.png);
+}
+
+.MegaMenuSP li.mm_ai a {
+	background-image: url(../../../image/en/r5/icon/megamenu/ai-icon-white.png);
+}
+
+.MegaMenuSP li.mm_energy a {
+	background-image: url(../../../image/en/r5/icon/megamenu/energy-icon-white.png);
+}
+
+.MegaMenuSP li.mm_transportation a {
+	background-image: url(../../../image/en/r5/icon/megamenu/transportation-icon-white.png);
+}
+
+.MegaMenuSP li.mm_manufacturing a {
+	background-image: url(../../../image/en/r5/icon/megamenu/manufacturing-icon-white.png);
+}
+
+.MegaMenuSP li.mm_urban a {
+	background-image: url(../../../image/en/r5/icon/megamenu/urban-icon-white.png);
+}
+
+.MegaMenuSP li.mm_robotics a {
+	background-image: url(../../../image/en/r5/icon/megamenu/robotics-icon-white.png);
+}
+
+.MegaMenuSP li.mm_life_economy a {
+	background-image: url(../../../image/en/r5/icon/megamenu/life_economy-icon-white.png);
+}
+
+
+
+
+/* for - 994px
+=========================================================================================== */
+
+@media screen and (max-width: 994px) {
+
+
+	/* ------ MegaMenu ------ */
+
+	.OptionRWD.JS #MegaMenu {
+		width: auto;
+		margin: 0;
+	}
+
+	.OptionRWD.JS .MMSet {min-width: 768px;}
+	
+	
+	/* PC */
+	
+	.MM2Container {
+		padding-right: 15px;
+	}
+	
+	.MM2ColumnArea {
+		width: auto;
+	}
+	
+	.MM2ColumnArea li {
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+		width: 25%;
+		margin: 0 0 20px 0;
+		padding-left: 15px;
+	}
+	
+	.MM2ColumnArea li a {
+		padding: 7px 0 7px 40px;
+		background-size: 30px 30px;
+	}
+
+
+}

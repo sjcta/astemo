@@ -1,0 +1,135 @@
+@charset "utf-8";
+
+/* **************************************************
+
+Name: identity_print.css
+
+Description: Print CSS for Hitachi Group Identity Page
+- //www.hitachi.com.cn/about/identity/index.html
+
+Create: 2014.10.XX
+Update: XXXX.XX.XX
+
+Copyright 2014 Hitachi, Ltd.
+
+***************************************************** */
+
+
+
+/* [-] Contents Navigation
+=========================================================================================== */
+
+.NaviFixed #IdentityNavi {position: relative;}
+
+.NaviFixed #IdentityNavi ul {height: 70px;}
+
+
+
+/* [-] Box
+=========================================================================================== */
+
+.IdentityVisualArea * {display: none;}
+
+.IdentityVisualArea:after {display: none;}
+
+
+
+/* [-] Triangle
+=========================================================================================== */
+
+.IdentityTriangle p,
+.IdentityTriangleWithText p {display: none;}
+
+
+/* [-] About
+=========================================================================================== */
+
+.NaviFixed #IdentityAbout {margin-top: -70px;}
+
+#IdentityAboutTriangle {display: none;}
+
+.IdentityTriangleWithText {
+	background: url(../image/identity_triangle_01_print.png) no-repeat;
+}
+
+
+
+/* [-] Mission
+=========================================================================================== */
+
+#IdentityMission .IdentityVisualArea {
+	background: url(../image/identity_visual_02_print.jpg) no-repeat;
+}
+
+#IdentityMission .IdentityTriangle {
+	background: url(../image/identity_triangle_02_print.png) no-repeat;
+}
+
+
+/* [-] Values
+=========================================================================================== */
+
+#IdentityValues1 .IdentityVisualArea {
+	background: url(../image/identity_visual_03-1_print.jpg) no-repeat;
+}
+
+#IdentityValues2 .IdentityVisualArea {
+	background: url(../image/identity_visual_03-2_print.jpg) no-repeat;
+}
+
+#IdentityValuesTriangle {display: none;}
+
+#IdentityValues .IdentityTriangle {
+	background: url(../image/identity_triangle_03_print.png) no-repeat;
+}
+
+.IE .IdentityButtonNext,
+.IE .IdentityButtonBack {display: none;}
+
+
+
+/* [-] Vision
+=========================================================================================== */
+
+#IdentityVision .IdentityVisualArea {
+	background: url(../image/identity_visual_04_print.jpg) no-repeat;
+}
+
+#IdentityVision .IdentityTriangle {
+	background: url(../image/identity_triangle_04_print.png) no-repeat;
+}
+
+
+
+/* [-] Movie
+=========================================================================================== */
+
+#IdentityMovie .IdentityVisualArea {
+	background: url(../image/identity_visual_05_print.jpg) no-repeat;
+}
+
+
+
+/* [-] IE
+=========================================================================================== */
+
+.IE #IdentityMission,
+.IE #IdentityValues,
+.IE #IdentityVision,
+.IE #IdentityMovie {page-break-before: always;}
+
+
+
+/* [-] Chrome
+=========================================================================================== */
+
+body {-webkit-print-color-adjust: exact;}
+
+
+
+/* [-] Firefox
+=========================================================================================== */
+
+.GridSet {
+	overflow: hidden;
+}

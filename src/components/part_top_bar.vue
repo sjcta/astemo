@@ -6,8 +6,7 @@
       scroll-target="#scrolling-top"
     >
         <div class="white--text">
-          <v-btn to="/"><v-icon middle>mdi-home</v-icon></v-btn>
-           日立安斯泰莫汽车系统
+          <v-btn to="/"><v-icon middle>mdi-home</v-icon><span>日立安斯泰莫汽车系统</span></v-btn>
         </div>
     </v-app-bar>
 </template>

@@ -9,8 +9,12 @@
 </template>
 
 <style scoped>
-</style>
-
+</style scoped>
+iframe {
+    width: 100vw;
+    margin-top: 56px;
+    height: calc(100vh - 56px);
+}
 <script>
 
 export default {

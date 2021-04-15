@@ -9,12 +9,13 @@
 </template>
 
 <style scoped>
-</style scoped>
 iframe {
     width: 100vw;
-    margin-top: 56px;
-    height: calc(100vh - 56px);
+    margin-top: 55px;
+    height: calc(100vh - 110px);
+    overflow: hidden;
 }
+</style>
 <script>
 
 export default {

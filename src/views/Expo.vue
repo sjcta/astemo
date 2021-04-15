@@ -11,8 +11,8 @@
 <style scoped>
 #ifm {
     width: 100vw;
-    margin-top: -45px;
-    height: calc(100vh - 5px);
+    margin-top: -115px;
+    height: calc(100vh + 60px);
     background-color: #eee;
 }
 </style>

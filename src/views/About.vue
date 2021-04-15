@@ -9,7 +9,12 @@
 </template>
 
 <style scoped>
-
+iframe {
+    width: 100vw;
+    margin-top: -45px;
+    height: calc(100vh - 5px);
+    background-color: #eee;
+}
 </style>
 
 <script>

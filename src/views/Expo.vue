@@ -3,7 +3,7 @@
     <v-sheet
       class="overflow-y-auto"
     >
-      <iframe :src="url" frameborder="0"></iframe>
+      <iframe src="//www.hitachi-automotive.cn/news/expo/" frameborder="0"></iframe>
     </v-sheet>
   </v-app>
 </template>
@@ -17,7 +17,7 @@ export default {
   name: 'expo',
   data () {
     return {
-      url: 'http://www.hitachi-automotive.cn/news/expo/'
+      url: '//www.hitachi-automotive.cn/news/expo/'
     }
   },
   methods: {

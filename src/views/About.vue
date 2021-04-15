@@ -3,7 +3,7 @@
     <v-sheet
       class="overflow-y-auto"
     >
-      <iframe :src="url" frameborder="0"></iframe>
+      <iframe src="//www.hitachi-automotive.cn/about" frameborder="0"></iframe>
     </v-sheet>
   </v-app>
 </template>

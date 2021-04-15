@@ -3,7 +3,7 @@
     <v-sheet
       class="overflow-y-auto"
     >
-      <iframe src="//www.hitachi-automotive.cn/about" frameborder="0"></iframe>
+      <iframe src="//www.hitachi-automotive.cn/about" frameborder="0">Your browser does not support inline frames or is currently configured not to display inline frames.</iframe>
     </v-sheet>
   </v-app>
 </template>

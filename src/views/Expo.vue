@@ -9,17 +9,15 @@
 </template>
 
 <style scoped>
-
 </style>
 
 <script>
 
 export default {
-  name: 'App',
-
+  name: 'expo',
   data () {
     return {
-      url: 'http://www.hitachi-automotive.cn/about/'
+      url: 'http://www.hitachi-automotive.cn/news/expo/'
     }
   },
   methods: {

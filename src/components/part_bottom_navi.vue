@@ -2,16 +2,15 @@
     <v-bottom-navigation
         absolute
         color="red darken-4"
-        hide-on-scroll
         scroll-target="#scrolling-top"
         grow
         >
-        <v-btn dark @click="$emit('switch','http://www.hitachi-automotive.cn/products/')">
+        <v-btn dark to="/products">
             <span>产品</span>
             <v-icon middle>mdi-car-cog</v-icon>
         </v-btn>
 
-        <v-btn @click="$emit('switch','http://www.hitachi-automotive.cn/news/expo/')">
+        <v-btn to="/expo">
             <span>展会</span>
             <v-icon middle>mdi-track-light</v-icon>
         </v-btn>
@@ -26,7 +25,7 @@
             <v-icon middle>mdi-message-text</v-icon>
         </v-btn>
 
-        <v-btn @click="$emit('switch','http://www.hitachi-automotive.cn/about/')">
+        <v-btn to="/about">
             <span>关于</span>
             <v-icon middle>mdi-information-outline</v-icon>
         </v-btn>

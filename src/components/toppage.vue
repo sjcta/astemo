@@ -48,7 +48,7 @@
   </v-container>
 </template>
 
-<style scope>
+<style>
 #toppageArea {
   padding: 0;
 }
@@ -65,6 +65,45 @@
 .TextStyle1 {
   font-size: .9em;
 }
+
+ .v-dialog .v-toolbar {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+  #scrolling-top {
+      max-height: calc(100vh - 55px);
+      padding-top: 55px;
+      padding-bottom: 55px;
+  }
+  .v-bottom-navigation {
+    bottom: 0;
+  }
+  .BrandingImage {
+    height: 80vw;
+    padding: 20px 15px;
+  }
+  .BrandingImage h2 {
+    font-size: 2.5em;
+    font-style:italic;
+    color: #FFF;
+    text-shadow: 0 3px 10px rgba(0,0,0,.7);
+    line-height: 1.2;
+  }
+  #cardArea {
+    padding-bottom: 30px;
+  }
+  .v-card .v-card__title span {
+    font-size: .8em;
+  }
+  .v-card .v-card__title h2 {
+    font-size: 1em;
+    margin-bottom: 20px;
+  }
+  .v-card .v-card__title h2 p {
+    margin-bottom: 0;
+  }
 
 #productsBlock .v-responsive {
   padding: 30px 30px 60px;
@@ -251,7 +290,6 @@
     width: 100px;
     flex-basis: calc(50% - 20px);
 }
-
 </style>
 
 <script>

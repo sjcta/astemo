@@ -6,7 +6,8 @@
       scroll-target="#scrolling-top"
     >
         <div class="white--text">
-          日立安斯泰莫汽车系统
+          <v-btn to="/"><v-icon middle>mdi-home</v-icon></v-btn>
+           日立安斯泰莫汽车系统
         </div>
     </v-app-bar>
 </template>
@@ -17,5 +18,6 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style>
+
 </style>

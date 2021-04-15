@@ -16,7 +16,7 @@
                 dark
                 @click="$emit('switch',false)"
             >
-                <v-icon>mdi-close</v-icon>
+                <v-icon>mdi-chevron-left</v-icon>
             </v-btn>
         </v-app-bar>
 
@@ -33,8 +33,9 @@
     z-index: 99;
 }
 .v-dialog #pageContent iframe {
+    margin-top: 55px;
     width: 100vw;
-    height: 100vh;
+    height: calc(100vh - 55px);
 }
 </style>
 

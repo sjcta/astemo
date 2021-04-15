@@ -32,6 +32,12 @@
     </v-bottom-navigation>
 </template>
 
+<style scoped>
+.v-item-group.v-bottom-navigation .v-btn {
+    min-width: 60px;
+}
+</style>
+
 <script>
 export default {
   name: 'bottomNavi',
@@ -40,3 +46,4 @@ export default {
     }
   }
 }
+</script>
